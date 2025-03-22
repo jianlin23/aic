@@ -1,7 +1,7 @@
 //Render Champion Data
 const champions = [
     {
-        image: '/assets/image/gallery/grand_champion.jpg',
+        image: 'assets/image/gallery/grand_champion.jpg',
         title: 'Grand Champion',
         prize: 'SGD 20,000',
         name: 'Azre Nazerul Rahman',
@@ -9,7 +9,7 @@ const champions = [
         country: 'Malaysia'
     },
     {
-        image: '/assets/image/gallery/1st_runner_up.jpg',
+        image: 'assets/image/gallery/1st_runner_up.jpg',
         title: '1st Runner-Up',
         prize: 'SGD 10,000',
         name: 'Ali Alexander',
@@ -17,7 +17,7 @@ const champions = [
         country: 'Indonesia'
     },
     {
-        image: '/assets/image/gallery/2nd_runner_up.jpg',
+        image: 'assets/image/gallery/2nd_runner_up.jpg',
         title: '2nd Runner-Up',
         prize: 'SGD 5,000',
         name: 'Team Scoop',
@@ -25,7 +25,7 @@ const champions = [
         country: 'Singapore'
     },
     {
-        image: '/assets/image/gallery/3rd_runner_up.jpg',
+        image: 'assets/image/gallery/3rd_runner_up.jpg',
         title: '3rd Runner-Up',
         prize: 'SGD 1,000',
         name: 'Naradith Aparprasith',
@@ -102,50 +102,50 @@ renderChampion(0);
 ////////////////////////////////////////////////////////////////////////
 const partners = {
     malaysia: [
-        { image: '/assets/image/home/partner/malaysia/bursa.png', name: 'Bursa Malaysia' }
+        { image: 'assets/image/home/partner/malaysia/bursa.png', name: 'Bursa Malaysia' }
     ],
     indonesia: [
-        { image: '/assets/image/home/partner/indonesia/idx.png', name: 'IDX' },
-        { image: '/assets/image/home/partner/indonesia/ipb_uni.png', name: 'IPB University' },
-        { image: '/assets/image/home/partner/indonesia/lspr.png', name: 'LSPR' },
-        { image: '/assets/image/home/partner/indonesia/udinus.png', name: 'UDINUS' },
-        { image: '/assets/image/home/partner/indonesia/bogor.png', name: 'Bogor' },
-        { image: '/assets/image/home/partner/indonesia/ul.png', name: 'UL' },
-        { image: '/assets/image/home/partner/indonesia/eagle.png', name: 'Eagle' },
-        { image: '/assets/image/home/partner/indonesia/feb.png', name: 'FEB' },
-        { image: '/assets/image/home/partner/indonesia/uii.png', name: 'UII' },
-        { image: '/assets/image/home/partner/indonesia/ubl.png', name: 'UBL' },
-        { image: '/assets/image/home/partner/indonesia/uik.png', name: 'UIK' },
-        { image: '/assets/image/home/partner/indonesia/flame.png', name: 'Flame' },
-        { image: '/assets/image/home/partner/indonesia/upgris.png', name: 'UPGRIS' },
-        { image: '/assets/image/home/partner/indonesia/sij.png', name: 'SIJ' },
-        { image: '/assets/image/home/partner/indonesia/up.png', name: 'UP' },
-        { image: '/assets/image/home/partner/indonesia/petra.png', name: 'PETRA' },
-        { image: '/assets/image/home/partner/indonesia/upt.png', name: 'UPT' },
-        { image: '/assets/image/home/partner/indonesia/usu.png', name: 'USU' },
-        { image: '/assets/image/home/partner/indonesia/ibs.png', name: 'IBS' },
-        { image: '/assets/image/home/partner/indonesia/uds.png', name: 'UDS' },
+        { image: 'assets/image/home/partner/indonesia/idx.png', name: 'IDX' },
+        { image: 'assets/image/home/partner/indonesia/ipb_uni.png', name: 'IPB University' },
+        { image: 'assets/image/home/partner/indonesia/lspr.png', name: 'LSPR' },
+        { image: 'assets/image/home/partner/indonesia/udinus.png', name: 'UDINUS' },
+        { image: 'assets/image/home/partner/indonesia/bogor.png', name: 'Bogor' },
+        { image: 'assets/image/home/partner/indonesia/ul.png', name: 'UL' },
+        { image: 'assets/image/home/partner/indonesia/eagle.png', name: 'Eagle' },
+        { image: 'assets/image/home/partner/indonesia/feb.png', name: 'FEB' },
+        { image: 'assets/image/home/partner/indonesia/uii.png', name: 'UII' },
+        { image: 'assets/image/home/partner/indonesia/ubl.png', name: 'UBL' },
+        { image: 'assets/image/home/partner/indonesia/uik.png', name: 'UIK' },
+        { image: 'assets/image/home/partner/indonesia/flame.png', name: 'Flame' },
+        { image: 'assets/image/home/partner/indonesia/upgris.png', name: 'UPGRIS' },
+        { image: 'assets/image/home/partner/indonesia/sij.png', name: 'SIJ' },
+        { image: 'assets/image/home/partner/indonesia/up.png', name: 'UP' },
+        { image: 'assets/image/home/partner/indonesia/petra.png', name: 'PETRA' },
+        { image: 'assets/image/home/partner/indonesia/upt.png', name: 'UPT' },
+        { image: 'assets/image/home/partner/indonesia/usu.png', name: 'USU' },
+        { image: 'assets/image/home/partner/indonesia/ibs.png', name: 'IBS' },
+        { image: 'assets/image/home/partner/indonesia/uds.png', name: 'UDS' },
     ],
     singapore: [
-        { image: '/assets/image/home/partner/singapore/sgx.png', name: 'SGX Group' },
-        { image: '/assets/image/home/partner/singapore/ite.png', name: 'ITE' },
-        { image: '/assets/image/home/partner/singapore/nyp.png', name: 'NYP' },
-        { image: '/assets/image/home/partner/singapore/na.png', name: 'NA' },
-        { image: '/assets/image/home/partner/singapore/rp.png', name: 'RP' },
-        { image: '/assets/image/home/partner/singapore/sp.png', name: 'SP' },
-        { image: '/assets/image/home/partner/singapore/tp.png', name: 'TP' },
-        { image: '/assets/image/home/partner/singapore/ntus.png', name: 'NTUS' },
-        { image: '/assets/image/home/partner/singapore/nus.png', name: 'NUS' },
-        { image: '/assets/image/home/partner/singapore/smu.png', name: 'SMU' },
-        { image: '/assets/image/home/partner/singapore/inc.png', name: 'INC' },
-        { image: '/assets/image/home/partner/singapore/suss.png', name: 'SUSS' },
+        { image: 'assets/image/home/partner/singapore/sgx.png', name: 'SGX Group' },
+        { image: 'assets/image/home/partner/singapore/ite.png', name: 'ITE' },
+        { image: 'assets/image/home/partner/singapore/nyp.png', name: 'NYP' },
+        { image: 'assets/image/home/partner/singapore/na.png', name: 'NA' },
+        { image: 'assets/image/home/partner/singapore/rp.png', name: 'RP' },
+        { image: 'assets/image/home/partner/singapore/sp.png', name: 'SP' },
+        { image: 'assets/image/home/partner/singapore/tp.png', name: 'TP' },
+        { image: 'assets/image/home/partner/singapore/ntus.png', name: 'NTUS' },
+        { image: 'assets/image/home/partner/singapore/nus.png', name: 'NUS' },
+        { image: 'assets/image/home/partner/singapore/smu.png', name: 'SMU' },
+        { image: 'assets/image/home/partner/singapore/inc.png', name: 'INC' },
+        { image: 'assets/image/home/partner/singapore/suss.png', name: 'SUSS' },
     ],
     thailand: [
-        { image: '/assets/image/home/partner/thailand/set.png', name: 'SET' },
-        { image: '/assets/image/home/partner/thailand/ku.png', name: 'KU' },
-        { image: '/assets/image/home/partner/thailand/cbs.png', name: 'CBS' },
-        { image: '/assets/image/home/partner/thailand/cmu.png', name: 'CMU' },
-        { image: '/assets/image/home/partner/thailand/kbs.png', name: 'KBS' }
+        { image: 'assets/image/home/partner/thailand/set.png', name: 'SET' },
+        { image: 'assets/image/home/partner/thailand/ku.png', name: 'KU' },
+        { image: 'assets/image/home/partner/thailand/cbs.png', name: 'CBS' },
+        { image: 'assets/image/home/partner/thailand/cmu.png', name: 'CMU' },
+        { image: 'assets/image/home/partner/thailand/kbs.png', name: 'KBS' }
     ]
 };
 
