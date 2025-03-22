@@ -1,0 +1,134 @@
+.contact-section {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--white) 100%);
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact-header h1 {
+    color: var(--dark-blue);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-desc {
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contact-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    background: var(--primary);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item:hover {
+    background: var(--orange-light);
+    transform: translateX(10px);
+}
+
+.flag-container {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.country-flag {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-details h3 {
+    color: var(--dark-blue);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-email {
+    display: flex;
+    align-items: center;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-email:hover {
+    color: var(--dark-blue);
+}
+
+.contact-email .material-icons {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.pending-text {
+    color: var(--text-dark);
+    font-style: italic;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 100px 0 60px;
+    }
+
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+
+    .contact-desc {
+        font-size: 1.1rem;
+    }
+
+    .contact-list {
+        padding: 20px;
+        margin: 0 15px;
+    }
+
+    .contact-item {
+        padding: 15px;
+    }
+
+    .flag-container {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+    }
+
+    .contact-details h3 {
+        font-size: 1.1rem;
+    }
+
+    .contact-email {
+        font-size: 0.9rem;
+    }
+}
