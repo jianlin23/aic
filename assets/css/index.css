@@ -1,0 +1,372 @@
+/* Poster Section */
+.poster-section {
+    margin-top: 70px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: margin-top 0.3s ease;
+}
+
+.poster-section img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Add responsive scaling for smaller screens */
+@media (max-width: 991px) {
+    .poster-section {
+        margin-top: 60px;
+    }
+
+    .poster-section img {
+        transform-origin: top;
+    }
+}
+
+@media (max-width: 576px) {
+    .poster-section {
+        margin-top: 60px;
+        height: 375px;
+    }
+
+    .poster-section img {
+        transform: scale(1.6);
+    }
+}
+
+/* --------------------------------------------------------------- */
+/* Champion Section */
+/* --------------------------------------------------------------- */
+.champion-section .container {
+    max-width: 1000px;
+}
+
+.champion-section {
+    padding: 50px 0 0;
+    text-align: center;
+    color: var(--text-dark);
+}
+
+.champion-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: fadeInUp 1s ease;
+}
+
+.champion-image {
+    max-width: 75%;
+    margin: 30px auto;
+    position: relative;
+}
+
+.champion-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(10%);
+    width: 48px;
+    height: 48px;
+    background-color: rgba(26, 35, 126, 0.8);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.nav-arrow .material-icons {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.nav-arrow:hover,
+.nav-arrow:active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.nav-arrow:active {
+    background-color: rgba(26, 35, 126, 1);
+}
+
+.nav-arrow.prev {
+    left: -75px;
+}
+
+.nav-arrow.next {
+    right: -75px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.champion-details {
+    margin-top: 30px;
+    animation-duration: 1s;
+}
+
+.champion-details h3 {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.champion-details p {
+    font-size: 1rem;
+    color: var(--text-black);
+    margin: 5px 0;
+}
+
+.prize-amount {
+    font-size: 1.4rem;
+    color: var(--text-dark);
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* Add responsive styles */
+@media (max-width: 991px) {
+    .champion-section {
+        padding: 30px 0 0;
+    }
+
+    .champion-image {
+        max-width: 90%;
+    }
+
+    .champion-image img {
+        height: 400px;
+    }
+
+    .nav-arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-arrow .material-icons {
+        font-size: 24px;
+    }
+
+    .nav-arrow.prev {
+        left: -45px;
+    }
+
+    .nav-arrow.next {
+        right: -45px;
+    }
+
+    .champion-details h3 {
+        font-size: 1.5rem;
+    }
+
+    .prize-amount {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .champion-image {
+        max-width: 100%;
+    }
+
+    .champion-image img {
+        height: 350px;
+    }
+
+    .nav-arrow {
+        width: 36px;
+        height: 36px;
+        background-color: rgba(26, 35, 126, 0.9);
+    }
+
+    .nav-arrow.prev {
+        left: 10px;
+    }
+
+    .nav-arrow.next {
+        right: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .champion-section {
+        padding: 20px 0 0;
+    }
+
+    .champion-section h2 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .champion-image img {
+        height: 300px;
+    }
+
+    .champion-details h3 {
+        font-size: 1.3rem;
+    }
+
+    .champion-details p {
+        font-size: 0.9rem;
+    }
+
+    .prize-amount {
+        font-size: 1.1rem;
+    }
+}
+
+/* --------------------------------------------------------------- */
+/* Partner Section */
+/* --------------------------------------------------------------- */
+.partner-section .container {
+    max-width: 1000px;
+}
+
+.partner-section {
+    padding: 50px 0 0;
+    text-align: center;
+    color: var(--text-dark);
+}
+
+.partner-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: fadeInUp 1s ease;
+}
+
+.country-name {
+    color: var(--text-dark);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.partner-section .row {
+    margin-bottom: 30px;
+}
+
+.partner-logo {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.partner-logo:hover {
+    transform: scale(1.2);
+}
+
+.partner-row-1 {
+    animation-delay: 0.2s;
+}
+
+.partner-row-2 {
+    animation-delay: 0.4s;
+}
+
+.partner-row-3 {
+    animation-delay: 0.6s;
+}
+
+.partner-row-4 {
+    animation-delay: 0.8s;
+}
+
+/* Logo animation delays within each row */
+.partner-logo-1 {
+    animation-delay: 0.3s;
+}
+
+.partner-logo-2 {
+    animation-delay: 0.4s;
+}
+
+.partner-logo-3 {
+    animation-delay: 0.5s;
+}
+
+.partner-logo-4 {
+    animation-delay: 0.6s;
+}
+
+.partner-logo-5 {
+    animation-delay: 0.7s;
+}
+
+.partner-logo-6 {
+    animation-delay: 0.8s;
+}
+
+.scroll-animation {
+    opacity: 0;
+}
+
+.scroll-animation.animate__animated {
+    opacity: 1;
+}
+
+/* Add responsive styles */
+@media (max-width: 991px) {
+    .country-name {
+        font-size: 1.1rem;
+    }
+
+    .partner-section .row {
+        margin-bottom: 20px;
+    }
+
+    .partner-logo {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .country-name {
+        font-size: 1rem;
+    }
+
+    .partner-logo {
+        padding: 5px;
+    }
+
+    .partner-logo:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 576px) {
+    .country-name {
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+
+    .partner-section .row {
+        margin-bottom: 15px;
+    }
+
+    .partner-logo {
+        padding: 3px;
+    }
+}
