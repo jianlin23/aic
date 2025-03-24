@@ -1,7 +1,7 @@
 //Render Champion Data
 const champions = [
     {
-        image: '/assets/image/gallery/grand_champion.jpg',
+        image: 'assets/image/gallery/grand_champion.jpg',
         title: 'Grand Champion',
         prize: 'SGD 20,000',
         name: 'Azre Nazerul Rahman',
@@ -9,7 +9,7 @@ const champions = [
         country: 'Malaysia'
     },
     {
-        image: '/assets/image/gallery/1st_runner_up.jpg',
+        image: 'assets/image/gallery/1st_runner_up.jpg',
         title: '1st Runner-Up',
         prize: 'SGD 10,000',
         name: 'Ali Alexander',
@@ -17,7 +17,7 @@ const champions = [
         country: 'Indonesia'
     },
     {
-        image: '/assets/image/gallery/2nd_runner_up.jpg',
+        image: 'assets/image/gallery/2nd_runner_up.jpg',
         title: '2nd Runner-Up',
         prize: 'SGD 5,000',
         name: 'Team Scoop',
@@ -25,7 +25,7 @@ const champions = [
         country: 'Singapore'
     },
     {
-        image: '/assets/image/gallery/3rd_runner_up.jpg',
+        image: 'assets/image/gallery/3rd_runner_up.jpg',
         title: '3rd Runner-Up',
         prize: 'SGD 1,000',
         name: 'Naradith Aparprasith',
@@ -33,7 +33,7 @@ const champions = [
         country: 'Thailand'
     },
     {
-        image: '/assets/image/gallery/the_winners_1.jpg',
+        image: 'assets/image/gallery/the_winners_1.jpg',
         title: '',
         prize: '',
         name: '',
@@ -41,7 +41,7 @@ const champions = [
         country: ''
     },
     {
-        image: '/assets/image/gallery/the_winners_2.jpg',
+        image: 'assets/image/gallery/the_winners_2.jpg',
         title: '',
         prize: '',
         name: '',
