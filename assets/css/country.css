@@ -6,10 +6,7 @@
 .content {
     max-width: 800px;
     margin: 0 auto;
-    background: var(--white);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 .prizes-header {
@@ -23,10 +20,11 @@
     border-radius: 50%;
     margin-bottom: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 5px solid var(--text-black);
 }
 
 .prizes-header h1 {
-    color: var(--text-dark);
+    color: var(--text-black);
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
@@ -48,44 +46,43 @@
     width: 100%;
     margin: 0 auto;
     border-collapse: separate;
-    border-spacing: 0 12px;
+    border-spacing: 0 5px;
+    padding: 20px 0 60px;
 }
 
 .prizes-table tr {
     background: var(--orange-light) !important;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-}
-
-.prizes-table tr:hover {
-    transform: translateY(-5px);
 }
 
 .prizes-table td {
     padding: 20px 30px;
     vertical-align: middle;
     color: var(--text-black);
+    border: 5px solid var(--text-black);
 }
 
 .prizes-table td:first-child {
-    border-radius: 10px 0 0 10px;
-    background: var(--orange-light);
-    font-weight: 600;
+    background: var(--orange);
+    font-weight: 400;
     width: 30%;
     text-align: center;
 }
 
 .prizes-table td:nth-child(2) {
     background: var(--sky-blue);
+    font-weight: 400;
     width: 35%;
     text-align: center;
+    border-left: none;
 }
 
 .prizes-table td:last-child {
-    border-radius: 0 10px 10px 0;
     background: var(--light-blue);
+    font-weight: 400;
     width: 35%;
     text-align: center;
+    border-left: none;
 }
 
 .table-header td {
@@ -110,7 +107,7 @@
 
 @media (max-width: 768px) {
     .prizes-section {
-        padding: 100px 20px 60px;
+        padding: 100px 20px 40px;
     }
 
     .prizes-header h1 {
@@ -131,16 +128,16 @@
 /* Champion Section */
 /* //////////////////////////////////////////////// */
 .champions-section {
-    padding: 40px 0;
+    padding: 20px 0 60px;
 }
 
 .champions-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .champions-header h2 {
-    color: var(--text-dark);
+    color: var(--text-black);
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
@@ -149,58 +146,51 @@
 .champions-table {
     width: 100%;
     margin: 0 auto;
-    border-collapse: separate;
     border-spacing: 0 15px;
 }
 
 .champions-table tr {
-    background: var(--primary);
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.champions-table tr:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    background: var(--orange-light);
 }
 
 .champions-table td {
     padding: 25px 30px;
     vertical-align: middle;
     text-align: center;
+    border: 5px solid var(--text-black);
 }
 
 .champions-table td:first-child {
-    border-radius: 10px 0 0 10px;
-    background: var(--orange-light);
+    background: var(--orange);
     color: var(--text-black);
     font-weight: 600;
-    width: 25%;
-    text-transform: uppercase;
+    width: 40%;
+    text-transform: capitalize;
 }
 
 .champions-table td:last-child {
-    border-radius: 0 10px 10px 0;
     text-align: center;
+    border-left: none;
     align-items: center;
 }
 
 .champions-table .winner-name {
-    font-weight: 600;
-    color: var(--text-dark);
+    font-weight: 700;
+    color: var(--text-black);
     font-size: 1.1rem;
     margin-bottom: 5px;
 }
 
 .champions-table .university {
-    color: var(--text-gray);
+    color: var(--text-black);
+    font-weight: 500;
     font-size: 0.9rem;
     text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
     .champions-section {
-        padding: 60px 20px;
+        padding: 40px 20px;
     }
 
     .champions-header h2 {
@@ -220,17 +210,17 @@
 /* Gallery Section */
 /* //////////////////////////////////////////////// */
 .gallery-section {
-    padding: 40px 0;
+    padding: 20px 0 60px;
     background: linear-gradient(135deg, var(--bg-light) 0%, var(--white) 100%);
 }
 
 .gallery-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .gallery-header h2 {
-    color: var(--text-dark);
+    color: var(--text-black);
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
@@ -247,11 +237,10 @@
 
 .gallery-item {
     position: relative;
-    border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    aspect-ratio: 16/9;
+    aspect-ratio: 4/3;
     cursor: pointer;
 }
 
@@ -374,7 +363,7 @@
 .partner-section {
     margin-top: 80px;
     text-align: center;
-    color: var(--text-dark);
+    color: var(--text-black);
 }
 
 .partner-section .row{
@@ -389,7 +378,7 @@
 }
 
 .country-name {
-    color: var(--text-dark);
+    color: var(--text-black);
     font-size: 1.2rem;
     font-weight: 500;
     margin-top: 10px;
@@ -408,7 +397,7 @@
 }
 
 .partners-grid .partner-logo {
-    max-width: 80px;
+    width: 120px;
     height: auto;
     transition: transform 0.3s ease;
     object-fit: contain;
@@ -417,7 +406,7 @@
 @media (max-width: 768px) {
     
     .partners-grid .partner-logo {
-        max-width: 80px;
+        width: 100px;
     }
 
     .partners-grid .row {
@@ -544,34 +533,22 @@
 }
 
 .uni-partner-section h2 {
-    color: var(--text-dark);
+    color: var(--text-black);
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .uni-partners-grid .uni-partner-card {
-    background: var(--primary);
     padding: 15px 10px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
-    transition: all 0.3s ease;
+    border: 1px solid var(--text-gray);
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.uni-partners-grid .uni-partner-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .uni-partners-grid .uni-name {
-    color: var(--text-dark);
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-top: 15px;
+    color: var(--text-black);
+    font-size: 0.5rem;
+    font-weight: 300;
     line-height: 1.4;
     font-weight: bold;
 }
@@ -582,19 +559,11 @@
 
 @media (max-width: 768px) {
     .uni-partner-section {
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     .uni-partner-section h2 {
         font-size: 1rem;
-    }
-
-    .uni-partners-grid .row {
-        margin-bottom: 15px;
-    }
-
-    .uni-partners-grid .col-12 {
-        margin-bottom: 15px;
     }
 
     .uni-partners-grid .col-12:last-child {

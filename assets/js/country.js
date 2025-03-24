@@ -1008,13 +1008,11 @@ function renderUniversityPartners(country) {
     }
 
     const rowsHtml = rows.map((rowUnis, rowIndex) => `
-        <div class="row mb-4">
+        <div class="row">
             ${rowUnis.map((uni, index) => `
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 p-0">
                     <div class="uni-partner-card">
-                        <div>
-                            <div class="uni-name">${uni.name}</div>
-                        </div>
+                        <div class="uni-name">${uni.name}</div>
                     </div>
                 </div>
             `).join('')}

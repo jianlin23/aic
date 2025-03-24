@@ -71,12 +71,12 @@ function renderChampion(index) {
             <div class="nav-arrow prev" onclick="navigateChampion(-1)">
                 <span class="material-icons">arrow_left</span>
             </div>
-            <img src="${champion.image}" alt="Champion Photo" class="animate__animated animate__${newAnimationDirection}">
+            <img src="${champion.image}" alt="Champion Photo">
             <div class="nav-arrow next" onclick="navigateChampion(1)">
                 <span class="material-icons">arrow_right</span>
             </div>
         </div>
-        <div class="champion-details animate__animated animate__${newAnimationDirection}">
+        <div class="champion-details">
             <h3>${champion.title}</h3>
             <div class="prize-amount">${champion.prize}</div>
             <p><strong>${champion.name}</strong></p>

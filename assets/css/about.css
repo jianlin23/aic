@@ -3,7 +3,7 @@
 /* /////////////////////////////////////////////////// */
 .about-section {
     margin-top: 100px;
-    padding: 50px 0;
+    padding: 40px 0 20px;
     background: var(--primary);
 }
 
@@ -38,20 +38,14 @@
 
 .about-content {
     margin: 0 auto;
-    padding: 30px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.about-content h2 {
+    font-size: 1rem;
     color: var(--text-black);
-    font-weight: bold;
 }
 
 .about-description {
     color: var(--text-black);
     line-height: 1.8;
+    font-size: 1rem;
     margin-bottom: 40px;
 }
 
@@ -60,8 +54,8 @@
 }
 
 .benefits-list {
-    list-style: none;
     padding: 0;
+    padding-left: 15px;
     color: var(--text-black);
 }
 
@@ -70,7 +64,6 @@
 }
 
 .benefit-item {
-    background: #f8f9fa;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -94,16 +87,13 @@
 }
 
 .prize-section {
-    background: var(--dark-blue);
-    color: white;
-    padding: 30px;
-    border-radius: 15px;
+    color: var(--text-black);
     margin-top: 40px;
     text-align: justify;
 }
 
 .prize-section h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -111,27 +101,20 @@
 /* Path Section */
 /* /////////////////////////////////////////////////// */
 .path-section {
-    padding: 40px 0;
-    background: linear-gradient(135deg, var(--bg-light) 0%, var(--white) 100%);
+    padding: 40px 0 20px;
 }
 
 .path-section .container {
     width: 850px;
 }
 
-.path-header {
+.path-header h3 {
     text-align: center;
-    margin-bottom: 50px;
-}
-
-.path-header h2 {
+    font-size: 1.2rem;
     color: var(--text-black);
-    font-size: 1.5rem;
-    font-weight: bold;
 }
 
 .path-description {
-    max-width: 800px;
     margin: 0 auto 40px;
     text-align: justify;
     color: var(--text-black);
@@ -148,38 +131,44 @@
 .criteria-table {
     width: 100%;
     border-collapse: separate;
-    border-spacing: 10px;
+    border-spacing: 10px 0;
     margin: 30px 0;
 }
 
+.criteria-table tr td,
+.criteria-table tr th{
+    margin-right: 20px;
+    border: 3px solid var(--text-black);
+}
+
+.criteria-table tr:nth-child(1) th{
+    border-bottom: none;
+}
+
+.criteria-table tr:nth-child(2) td:nth-child(1),
+.criteria-table tr:nth-child(2) td:nth-child(2),
+.criteria-table tr:nth-child(2) td:nth-child(3){
+    border-top: none;
+    border-bottom: none;
+}
+
+.criteria-table tr:nth-child(3) td{
+    border-top: none;
+}
+
 .criteria-table th {
-    background: var(--orange-light);
+    background: var(--orange);
     color: var(--text-black);
     padding: 25px;
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.criteria-table th:hover {
-    transform: translateY(-5px);
 }
 
 .criteria-table td {
-    background: var(--orange-light);
-    padding: 25px;
+    background: var(--orange);
+    padding: 20px;
     vertical-align: top;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.criteria-table td:hover {
-    transform: translateY(-5px);
-    background: linear-gradient(145deg, var(--orange-light), #fff5eb);
 }
 
 .challenge-content {
@@ -193,10 +182,6 @@
 
 .level-content {
     color: var(--text-black);
-}
-
-.challenge-desc {
-    font-weight: 500;
 }
 
 .criteria-list {
@@ -213,26 +198,15 @@
     transition: all 0.3s ease;
     align-items: center;
     cursor: default;
-    font-size: 0.65rem;
+    font-size: 0.9rem;
     margin: 0;
-    font-weight: bold;
-}
-
-.criteria-list li:hover {
-    background: rgba(255, 255, 255, 0.5);
-    transform: translateX(5px);
 }
 
 .percentage-icon {
-    color: var(--dark-blue);
+    color: var(--text-black);
     font-size: 1.2rem;
     margin-right: 10px;
     opacity: 0.8;
-}
-
-.criteria-list li:hover .percentage-icon {
-    transform: scale(1.3);
-    transition: transform 0.5s ease;
 }
 
 /* Remove the old bullet point style */
@@ -248,8 +222,8 @@
     padding: 15px 30px;
     font-weight: bold;
     font-size: 1.1rem;
-    border-radius: 30px;
-    transition: all 0.3s ease;
+    border-radius: none;
+    text-decoration: none;
 }
 
 .criteria-btn:hover,
@@ -263,7 +237,7 @@
 /* Timeline Section */
 /* ///////////////////////////////////////////////////////////////////////////////////// */
 .timeline-section {
-    padding: 40px 0;
+    padding: 40px 0 20px;
     background: linear-gradient(135deg, var(--bg-light) 0%, var(--white) 100%);
 }
 

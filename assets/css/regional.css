@@ -5,7 +5,7 @@
 }
 
 .prizes-section .container {
-    max-width: 850px;
+    max-width: 900px;
 }
 
 .prizes-header {
@@ -40,37 +40,36 @@
     transition: transform 0.3s ease;
 }
 
-.prizes-table tr:hover {
-    transform: translateY(-5px);
-}
-
 .prizes-table td {
     padding: 20px 30px;
+    border: 5px solid var(--text-black);
     vertical-align: middle;
     text-align: center;
     color: var(--text-black);
 }
 
 .prizes-table td:first-child {
-    border-radius: 10px 0 0 10px;
-    background: var(--orange-light);
+    background: var(--orange);
     font-weight: 600;
     width: 40%;
 }
 
 .prizes-table td:last-child {
-    border-radius: 0 10px 10px 0;
     background: var(--light-blue);
     color: var(--text-black);
-    font-weight: 600;
+    border-left: none;
+    font-weight: 500;
     width: 60%;
 }
 
-.table-header {
-    background: var(--orange-light) !important;
-    color: var(--white);
+.table-header td:first-child {
+    border-right: none;
+}
+
+.table-header td:last-child {
+    background: var(--orange) !important;
+    border-left: none;
     text-align: center;
-    border-radius: 10px !important;
     margin-bottom: 20px;
 }
 
@@ -102,12 +101,12 @@
 }
 
 .champions-section .container {
-    max-width: 850px;
+    max-width: 900px;
 }
 
 .champions-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .champions-header h2 {
@@ -120,39 +119,30 @@
 .champions-table {
     width: 80%;
     margin: 0 auto;
-    border-collapse: separate;
-    border-spacing: 0 15px;
 }
 
 .champions-table tr {
-    background: var(--white);
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    background: var(--orange-light);
     transition: all 0.3s ease;
-}
-
-.champions-table tr:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 .champions-table td {
     padding: 25px 30px;
     vertical-align: middle;
     text-align: center;
+    border: 5px solid var(--text-black);
 }
 
 .champions-table td:first-child {
-    border-radius: 10px 0 0 10px;
-    background: var(--orange-light);
+    background: var(--orange);
     color: var(--text-black);
     font-weight: 600;
-    width: 25%;
+    width: 45%;
 }
 
 .champions-table td:last-child {
-    border-radius: 0 10px 10px 0;
     text-align: center;
-    align-items: center;
+    border-left: none;
 }
 
 .champions-table .winner-name {
@@ -163,8 +153,9 @@
 }
 
 .champions-table .university {
-    color: var(--text-gray);
+    color: var(--text-black);
     font-size: 0.9rem;
+    font-weight: 400;
 }
 
 @media (max-width: 768px) {
@@ -194,7 +185,7 @@
 }
 
 .gallery-section .container {
-    max-width: 850px;
+    max-width: 900px;
 }
 
 .gallery-header {
@@ -220,11 +211,10 @@
 
 .gallery-item {
     position: relative;
-    border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    aspect-ratio: 16/9;
+    aspect-ratio: 4/3;
     cursor: pointer;
 }
 

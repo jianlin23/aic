@@ -1,6 +1,5 @@
 .tc-section {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, var(--bg-light) 0%, var(--white) 100%);
 }
 
 .tc-header {
@@ -9,7 +8,7 @@
 }
 
 .tc-header h1 {
-    color: var(--text-dark);
+    color: var(--text-black);
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
@@ -18,14 +17,11 @@
 .tc-content {
     max-width: 900px;
     margin: 0 auto;
-    background: var(--white);
     padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
 }
 
 .tc-section h2 {
-    color: var(--text-dark);
+    color: var(--text-black);
     font-size: 1.5rem;
     margin-bottom: 20px;
     font-weight: 600;
@@ -58,13 +54,13 @@
 
 .tc-btn {
     background: var(--white);
-    color: var(--dark-blue);
-    border: 2px solid var(--dark-blue);
+    color: var(--text-black);
+    border: 2px solid var(--text-black);
     padding: 15px 30px;
     font-weight: bold;
     font-size: 1.1rem;
-    border-radius: 30px;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .tc-btn:hover {
