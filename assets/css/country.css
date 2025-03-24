@@ -39,6 +39,11 @@
     margin-bottom: 10px;
 }
 
+.content .prizes-table{
+    width: 100%;
+    margin: 0;
+}
+
 .prizes-table {
     width: 100%;
     margin: 0 auto;
@@ -118,7 +123,7 @@
 
     .prizes-table td {
         padding: 15px 20px;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }
 
