@@ -1,46 +1,46 @@
 const galleryImages = [
     {
-        src: '../assets/image/gallery/regional/1.jpg',
+        src: '/assets/image/gallery/regional/1.jpg',
         alt: 'AIC Regional Champion 2024'
     },
     {
-        src: '../assets/image/gallery/regional/2.jpg',
+        src: '/assets/image/gallery/regional/2.jpg',
         alt: 'AIC Regional Champion 2024'
     },
     {
-        src: '../assets/image/gallery/regional/3.jpg',
+        src: '/assets/image/gallery/regional/3.jpg',
         alt: 'AIC Regional Champion 2024'
     },
     {
-        src: '../assets/image/gallery/regional/4.jpg',
+        src: '/assets/image/gallery/regional/4.jpg',
         alt: 'AIC Regional Champion 2024'
     },
     {
-        src: '../assets/image/gallery/regional/5.jpg',
+        src: '/assets/image/gallery/regional/5.jpg',
         alt: 'AIC Regional Champion 2024'
     },
     {
-        src: '../assets/image/gallery/regional/6.jpg',
+        src: '/assets/image/gallery/regional/6.jpg',
         alt: 'AIC Regional Champion 2024'
     },
     {
-        src: '../assets/image/gallery/regional/7.jpg',
+        src: '/assets/image/gallery/regional/7.jpg',
         alt: 'AIC Regional Champion 2024'
     },
     {
-        src: '../assets/image/gallery/regional/8.jpg',
+        src: '/assets/image/gallery/regional/8.jpg',
         alt: 'AIC Regional Champion 2024'
     },
     {
-        src: '../assets/image/gallery/regional/9.jpg',
+        src: '/assets/image/gallery/regional/9.jpg',
         alt: 'AIC Regional Champion 2024'
     },
     {
-        src: '../assets/image/gallery/regional/10.jpg',
+        src: '/assets/image/gallery/regional/10.jpg',
         alt: 'AIC Regional Champion 2024'
     },
     {
-        src: '../assets/image/gallery/regional/11.jpg',
+        src: '/assets/image/gallery/regional/11.jpg',
         alt: 'AIC Regional Champion 2024'
     }
 ];

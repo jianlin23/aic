@@ -9,14 +9,14 @@
 }
 
 .contact-header h1 {
-    color: var(--dark-blue);
+    color: var(--text-black);
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .contact-desc {
-    color: var(--text-dark);
+    color: var(--text-black);
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
@@ -66,7 +66,7 @@
 }
 
 .contact-details h3 {
-    color: var(--dark-blue);
+    color: var(--text-black);
     font-size: 1.2rem;
     margin-bottom: 5px;
     font-weight: bold;
@@ -75,14 +75,14 @@
 .contact-email {
     display: flex;
     align-items: center;
-    color: var(--text-dark);
+    color: var(--text-black);
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 .contact-email:hover {
-    color: var(--dark-blue);
+    color: var(--text-black);
 }
 
 .contact-email .material-icons {
@@ -91,7 +91,7 @@
 }
 
 .pending-text {
-    color: var(--text-dark);
+    color: var(--text-black);
     font-style: italic;
     margin: 0;
 }
@@ -102,11 +102,11 @@
     }
 
     .contact-header h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .contact-desc {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .contact-list {

@@ -1,7 +1,11 @@
 /* Prize Section */
 .prizes-section {
-    padding: 120px 0 80px;
+    padding: 120px 0 40px;
     background: linear-gradient(135deg, var(--bg-light) 0%, var(--white) 100%);
+}
+
+.prizes-section .container {
+    max-width: 850px;
 }
 
 .prizes-header {
@@ -10,21 +14,21 @@
 }
 
 .prizes-header h1 {
-    color: var(--text-dark);
+    color: var(--text-black);
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .prizes-header h2 {
-    color: var(--text-dark);
-    font-size: 1rem;
+    color: var(--text-black);
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 10px;
 }
 
 .prizes-table {
-    min-width: 800px;
+    width: 80%;
     margin: 0 auto;
     border-collapse: separate;
     border-spacing: 0 10px;
@@ -57,7 +61,7 @@
 .prizes-table td:last-child {
     border-radius: 0 10px 10px 0;
     background: var(--light-blue);
-    color: var(--text-dark);
+    color: var(--text-black);
     font-weight: 600;
     width: 60%;
 }
@@ -76,16 +80,17 @@
 }
 
 @media (max-width: 768px) {
-    .prizes-section {
-        padding: 100px 20px 60px;
-    }
 
     .prizes-header h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .prizes-header h2 {
+        font-size: 1rem;
     }
 
     .prizes-table td {
-        padding: 15px 20px;
+        padding: 5px 10px;
     }
 }
 
@@ -96,20 +101,24 @@
     padding: 40px 0;
 }
 
+.champions-section .container {
+    max-width: 850px;
+}
+
 .champions-header {
     text-align: center;
     margin-bottom: 60px;
 }
 
 .champions-header h2 {
-    color: var(--text-dark);
-    font-size: 2rem;
+    color: var(--text-black);
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .champions-table {
-    min-width: 1000px;
+    width: 80%;
     margin: 0 auto;
     border-collapse: separate;
     border-spacing: 0 15px;
@@ -148,7 +157,7 @@
 
 .champions-table .winner-name {
     font-weight: 600;
-    color: var(--text-dark);
+    color: var(--text-black);
     font-size: 1.1rem;
     margin-bottom: 5px;
 }
@@ -164,7 +173,7 @@
     }
 
     .champions-header h2 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .champions-table td {
@@ -172,7 +181,7 @@
     }
 
     .champions-table .winner-name {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -184,14 +193,18 @@
     background: linear-gradient(135deg, var(--bg-light) 0%, var(--white) 100%);
 }
 
+.gallery-section .container {
+    max-width: 850px;
+}
+
 .gallery-header {
     text-align: center;
     margin-bottom: 60px;
 }
 
 .gallery-header h2 {
-    color: var(--text-dark);
-    font-size: 2rem;
+    color: var(--text-black);
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -324,6 +337,6 @@
     }
 
     .gallery-header h2 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }

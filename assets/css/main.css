@@ -1,15 +1,40 @@
 @import url('var.css');
 
+/* --------------------------------------------------------------- */
+/* Font Type */
+/* --------------------------------------------------------------- */
 body {
     background-color: var(--primary);
     color: white;
-    font-family: 'Arial', sans-serif;
     /* user-select: none; */
 }
 
+h1{
+    font-family: var(--font-primary);
+}
+
+.navbar .nav-link {
+    font-family: var(--font-primary);
+    font-weight: 500;
+}
+
+.register-btn {
+    font-family: var(--font-primary);
+    font-weight: bold;
+}
+
+.footer {
+    font-family: var(--font-primary);
+    font-weight: 300;
+}
+
+/* --------------------------------------------------------------- */
+/* Navbar */
+/* --------------------------------------------------------------- */
 .navbar {
     background-color: var(--dark-blue) !important;
     padding: 1rem;
+    width: 100%;
     transition: all 0.3s ease;
 }
 
@@ -18,6 +43,7 @@ body {
     margin: 0 30px;
     position: relative;
     transition: all 0.3s ease;
+    font-size: 0.75rem;
 }
 
 .nav-link:hover {
@@ -60,11 +86,11 @@ body {
     animation: fadeIn 0.3s ease;
 }
 
-.dropdown-header {
+/* .dropdown-header {
     color: var(--primary);
     font-weight: bold;
     padding: 0;
-}
+} */
 
 .dropdown-item {
     color: white;
@@ -94,10 +120,12 @@ body {
     transition: transform 0.3s ease;
 }
 
+/* --------------------------------------------------------------- */
+/* Register */
+/* --------------------------------------------------------------- */
 .register-btn {
     background-color: white;
     color: var(--text-dark) !important;
-    border-radius: 20px;
     padding: 8px 25px !important;
     font-weight: bold;
     transition: all 0.3s ease;
@@ -116,7 +144,9 @@ body {
     color: var(--text-dark) !important;
 }
 
+/* --------------------------------------------------------------- */
 /* Footer */
+/* --------------------------------------------------------------- */
 .footer {
     background-color: var(--primary);
     padding: 20px 0;
@@ -125,169 +155,8 @@ body {
 
 .footer p {
     color: rgba(0, 0, 0, 0.5);
-    font-weight: bold;
     margin: 0;
-    font-size: 0.9rem;
-}
-
-/* Mobile navbar styles */
-@media (max-width: 991px) {
-    .navbar-collapse {
-        position: fixed;
-        left: 0;
-        right: 0;
-        background-color: var(--dark-blue);
-        padding: 1rem;
-        z-index: 1000;
-    }
-
-    /* Add this class to handle the expanded state */
-    body.nav-expanded .poster-section {
-        margin-top: 400px;
-        /* Adjust this value based on your menu height */
-    }
-
-    .dropdown-menu {
-        background-color: transparent;
-        border: none;
-        padding-left: 2rem;
-    }
-
-    .dropdown-item {
-        padding: 0.5rem 0;
-    }
-
-    .dropdown-header {
-        padding-left: 0;
-    }
-
-    .dropdown-icon {
-        position: absolute;
-    }
-
-    .dropdown-item:hover {
-        transform: scale(1.02);
-        padding-left: 1.5rem;
-    }
-
-    .register-btn {
-        position: absolute;
-        transform: none;
-        width: auto;
-        top: 5px;
-        right: 5%;
-        padding: 6px 15px !important;
-        font-size: 0.9rem;
-        z-index: 1001;
-    }
-
-    .navbar-collapse {
-        position: relative;
-        background-color: var(--dark-blue);
-        padding: 0;
-        margin-top: 0;
-        z-index: 1000;
-        width: 100%;
-    }
-
-    .navbar-collapse.show~.register-btn.d-lg-none {
-        top: calc(100% - 15px);
-        right: 20px;
-        transition: all 0.3s ease;
-    }
-
-    .navbar-nav {
-        align-items: flex-start !important;
-    }
-
-    .nav-item {
-        width: 100%;
-        opacity: 0;
-        animation: slideIn 0.3s ease forwards;
-    }
-
-    .nav-link {
-        margin: 10px 0;
-        padding: 10px 20px;
-        text-align: left;
-        display: inline-block;
-        width: auto;
-    }
-
-    .nav-link::after {
-        left: 15px;
-        transform: none;
-        bottom: 5px;
-        width: 0;
-    }
-
-    .nav-link:hover::after,
-    .nav-link.active::after {
-        width: calc(100% - 30px);
-    }
-
-    @keyframes slideIn {
-        from {
-            opacity: 0;
-            transform: translateY(-10px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    /* Add animation delay for each nav item */
-    .nav-item:nth-child(1) {
-        animation-delay: 0.1s;
-    }
-
-    .nav-item:nth-child(2) {
-        animation-delay: 0.2s;
-    }
-
-    .nav-item:nth-child(3) {
-        animation-delay: 0.3s;
-    }
-
-    .nav-item:nth-child(4) {
-        animation-delay: 0.4s;
-    }
-
-    .nav-item:nth-child(5) {
-        animation-delay: 0.5s;
-    }
-
-    .navbar-toggler {
-        border: none;
-        padding: 0.5rem;
-        color: white;
-    }
-
-    .navbar-toggler:focus {
-        box-shadow: none;
-        outline: none;
-    }
-
-    .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }
-}
-
-/* Small mobile devices */
-@media (max-width: 576px) {
-    .navbar {
-        padding: 0.5rem;
-    }
-
-    .navbar-collapse {
-        margin: 0.5rem;
-        padding: 1rem;
-    }
-
-    .nav-link {
-        font-size: 0.9rem;
-        padding: 8px 15px;
-    }
+    font-size: 0.7rem;
+    font-weight: lighter;
+    text-transform: capitalize;
 }

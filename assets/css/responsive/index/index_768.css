@@ -1,0 +1,106 @@
+@media (max-width: 768px) {
+
+    /* --------------------------------------------------------------- */
+    /* Poster Section */
+    /* --------------------------------------------------------------- */
+    .poster-section {
+        margin-top: 60px;
+        height: 400px;
+    }
+
+    /* --------------------------------------------------------------- */
+    /* Champion Section */
+    /* --------------------------------------------------------------- */
+    .champion-section .container {
+        max-width: 400px;
+    }
+
+    .champion-section {
+        padding: 20px 0;
+    }
+
+    .champion-section h2 {
+        font-size: 0.7rem;
+    }
+
+    .champion-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-arrow {
+        width: 28px;
+        height: 28px;
+        border: 4px solid black;
+    }
+
+    .nav-arrow .material-icons {
+        font-size: 36px;
+        line-height: 1;
+    }
+
+    .nav-arrow.prev {
+        left: -40px;
+    }
+
+    .nav-arrow.next {
+        right: -40px;
+    }
+
+    .champion-details h3 {
+        font-size: 0.8rem;
+        color: var(--text-black);
+        margin-bottom: 10px;
+    }
+
+    .prize-amount {
+        font-size: 0.7rem;
+        color: var(--text-black);
+        margin: 15px 0;
+    }
+
+    .champion-details p {
+        font-size: 0.7rem;
+        color: var(--text-black);
+        margin: 5px 0;
+    }
+
+    /* --------------------------------------------------------------- */
+    /* Partner Section */
+    /* --------------------------------------------------------------- */
+    .partner-section .container {
+        max-width: 400px;
+    }
+
+    .partner-section h2 {
+        font-size: 0.7rem;
+        padding-bottom: 0;
+    }
+
+    .partners-grid .row {
+        margin: 0;
+    }
+
+    .country-name {
+        font-size: 0.6rem;
+    }
+
+    .country-name {
+        font-size: 0.6rem;
+    }
+
+    .partner-logo {
+        width: 100%;
+        max-width: 120px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .malaysia-first-logo {
+        width: 100%;
+        transform: scale(0.8);
+        display: flex;
+        justify-content: center;
+    }
+}

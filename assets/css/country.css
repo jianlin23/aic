@@ -4,7 +4,7 @@
 }
 
 .content {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     background: var(--white);
     padding: 40px;
@@ -14,7 +14,7 @@
 
 .prizes-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .prizes-header .country-flag {
@@ -34,20 +34,20 @@
 
 .prizes-header h2 {
     color: var(--text-black);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .prizes-table {
-    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
     border-collapse: separate;
     border-spacing: 0 12px;
 }
 
 .prizes-table tr {
-    background: var(--orange-light);
+    background: var(--orange-light) !important;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -64,7 +64,7 @@
 
 .prizes-table td:first-child {
     border-radius: 10px 0 0 10px;
-    background: var(--primary);
+    background: var(--orange-light);
     font-weight: 600;
     width: 30%;
     text-align: center;
@@ -94,8 +94,13 @@
     border-radius: 10px 0 0 10px;
 }
 
+.table-header td:nth-child(2) {
+    background: var(--sky-blue) !important;
+}
+
 .table-header td:last-child {
     border-radius: 0 10px 10px 0;
+    background: var(--light-blue) !important;
 }
 
 @media (max-width: 768px) {
@@ -105,6 +110,10 @@
 
     .prizes-header h1 {
         font-size: 2rem;
+    }
+
+    .prizes-header h2 {
+        font-size: 1rem;
     }
 
     .prizes-table td {
@@ -127,20 +136,20 @@
 
 .champions-header h2 {
     color: var(--text-dark);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .champions-table {
-    min-width: 600px;
+    width: 100%;
     margin: 0 auto;
     border-collapse: separate;
     border-spacing: 0 15px;
 }
 
 .champions-table tr {
-    background: var(--white);
+    background: var(--primary);
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
@@ -162,6 +171,7 @@
     color: var(--text-black);
     font-weight: 600;
     width: 25%;
+    text-transform: uppercase;
 }
 
 .champions-table td:last-child {
@@ -180,6 +190,7 @@
 .champions-table .university {
     color: var(--text-gray);
     font-size: 0.9rem;
+    text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
@@ -188,7 +199,7 @@
     }
 
     .champions-header h2 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .champions-table td {
@@ -215,7 +226,7 @@
 
 .gallery-header h2 {
     color: var(--text-dark);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -348,7 +359,7 @@
     }
 
     .gallery-header h2 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }
 
@@ -361,8 +372,12 @@
     color: var(--text-dark);
 }
 
+.partner-section .row{
+    margin: 0;
+}
+
 .partner-section h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     font-weight: bold;
     animation: fadeInUp 1s ease;
@@ -377,24 +392,32 @@
 
 .partner-section .row {
     margin-bottom: 30px;
+    width: 100%;
+    padding: 0 15px;
 }
 
-.partner-logo {
-    max-width: 100%;
-    height: auto;
-    transition: all 0.3s ease;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.partner-logo:hover {
-    transform: scale(1.2);
+.partners-grid .row {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .partners-grid .partner-logo {
-    max-width: 150px;
+    max-width: 80px;
     height: auto;
     transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    
+    .partners-grid .partner-logo {
+        max-width: 80px;
+    }
+
+    .partners-grid .row {
+        gap: 10px;
+    }
 }
 
 .partners-grid .partner-logo:hover {
@@ -468,6 +491,10 @@
         margin-bottom: 20px;
     }
 
+    .partner-section h2 {
+        font-size: 1rem;
+    }
+
     .partner-logo {
         padding: 8px;
     }
@@ -507,13 +534,13 @@
 /* --------------------------------------------------------------- */
 /* University Partners Section */
 .uni-partner-section {
-    margin-top: 100px;
+    margin-top: 80px;
     text-align: center;
 }
 
 .uni-partner-section h2 {
     color: var(--text-dark);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -544,12 +571,28 @@
     font-weight: bold;
 }
 
+.uni-partners-grid .row{
+    margin: 0;
+}
+
 @media (max-width: 768px) {
     .uni-partner-section {
         margin-top: 60px;
     }
-    
+
     .uni-partner-section h2 {
-        font-size: 2rem;
+        font-size: 1rem;
+    }
+
+    .uni-partners-grid .row {
+        margin-bottom: 15px;
+    }
+
+    .uni-partners-grid .col-12 {
+        margin-bottom: 15px;
+    }
+
+    .uni-partners-grid .col-12:last-child {
+        margin-bottom: 0;
     }
 }

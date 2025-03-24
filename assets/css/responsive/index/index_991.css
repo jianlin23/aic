@@ -1,0 +1,34 @@
+@media (max-width: 991px) {
+    /* --------------------------------------------------------------- */
+    /* Poster Section */
+    /* --------------------------------------------------------------- */
+    .poster-section {
+        margin-top: 75px;
+        height: 700px;
+    }
+
+    .poster-section img {
+        transform: scale(1.5);
+        transform-origin: top;
+        object-fit: contain;
+    }
+
+    /* --------------------------------------------------------------- */
+    /* Champion Section */
+    /* --------------------------------------------------------------- */
+    .champion-section .container {
+        max-width: 700px;
+    }
+
+    .champion-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* --------------------------------------------------------------- */
+    /* Partner Section */
+    /* --------------------------------------------------------------- */
+    .partner-section .container {
+        max-width: 700px;
+    }
+}
