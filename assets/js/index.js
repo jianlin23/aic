@@ -117,50 +117,50 @@ renderChampion(0);
 ////////////////////////////////////////////////////////////////////////
 const partners = {
     malaysia: [
-        { image: '/assets/image/home/partner/malaysia/bursa.png', name: 'Bursa Malaysia', link: 'https://www.bursamalaysia.com' }
+        { image: 'assets/image/home/partner/malaysia/bursa.png', name: 'Bursa Malaysia', link: 'https://www.bursamalaysia.com' }
     ],
     indonesia: [
-        { image: '/assets/image/home/partner/indonesia/idx.png', name: 'IDX', link: 'https://www.idx.co.id' },
-        { image: '/assets/image/home/partner/indonesia/ipb_uni.png', name: 'IPB University', link: 'https://ipb.ac.id' },
-        { image: '/assets/image/home/partner/indonesia/lspr.png', name: 'LSPR', link: 'https://www.lspr.edu' },
-        { image: '/assets/image/home/partner/indonesia/udinus.png', name: 'UDINUS', link: 'https://www.dinus.ac.id' },
-        { image: '/assets/image/home/partner/indonesia/bogor.png', name: 'Bogor', link: 'https://kotabogor.go.id' },
-        { image: '/assets/image/home/partner/indonesia/ul.png', name: 'UL', link: 'https://www.ul.ac.id' },
-        { image: '/assets/image/home/partner/indonesia/eagle.png', name: 'Eagle', link: 'https://eagle.co.id' },
-        { image: '/assets/image/home/partner/indonesia/feb.png', name: 'FEB', link: 'https://feb.ugm.ac.id' },
-        { image: '/assets/image/home/partner/indonesia/uii.png', name: 'UII', link: 'https://www.uii.ac.id' },
-        { image: '/assets/image/home/partner/indonesia/ubl.png', name: 'UBL', link: 'https://www.ubl.ac.id' },
-        { image: '/assets/image/home/partner/indonesia/uik.png', name: 'UIK', link: 'https://uik.ac.id' },
-        { image: '/assets/image/home/partner/indonesia/flame.png', name: 'Flame', link: 'https://www.flame.edu.in' },
-        { image: '/assets/image/home/partner/indonesia/upgris.png', name: 'UPGRIS', link: 'https://www.upgris.ac.id' },
-        { image: '/assets/image/home/partner/indonesia/sij.png', name: 'SIJ', link: 'https://sij.ac.id' },
-        { image: '/assets/image/home/partner/indonesia/up.png', name: 'UP', link: 'https://www.up.edu.ph' },
-        { image: '/assets/image/home/partner/indonesia/petra.png', name: 'PETRA', link: 'https://www.petra.ac.id' },
-        { image: '/assets/image/home/partner/indonesia/upt.png', name: 'UPT', link: 'https://www.upt.ac.id' },
-        { image: '/assets/image/home/partner/indonesia/usu.png', name: 'USU', link: 'https://www.usu.ac.id' },
-        { image: '/assets/image/home/partner/indonesia/ibs.png', name: 'IBS', link: 'https://www.ibs.ac.id' },
-        { image: '/assets/image/home/partner/indonesia/uds.png', name: 'UDS', link: 'https://www.uds.ac.id' }
+        { image: 'assets/image/home/partner/indonesia/idx.png', name: 'IDX', link: 'https://www.idx.co.id' },
+        { image: 'assets/image/home/partner/indonesia/ipb_uni.png', name: 'IPB University', link: 'https://ipb.ac.id' },
+        { image: 'assets/image/home/partner/indonesia/lspr.png', name: 'LSPR', link: 'https://www.lspr.edu' },
+        { image: 'assets/image/home/partner/indonesia/udinus.png', name: 'UDINUS', link: 'https://www.dinus.ac.id' },
+        { image: 'assets/image/home/partner/indonesia/bogor.png', name: 'Bogor', link: 'https://kotabogor.go.id' },
+        { image: 'assets/image/home/partner/indonesia/ul.png', name: 'UL', link: 'https://www.ul.ac.id' },
+        { image: 'assets/image/home/partner/indonesia/eagle.png', name: 'Eagle', link: 'https://eagle.co.id' },
+        { image: 'assets/image/home/partner/indonesia/feb.png', name: 'FEB', link: 'https://feb.ugm.ac.id' },
+        { image: 'assets/image/home/partner/indonesia/uii.png', name: 'UII', link: 'https://www.uii.ac.id' },
+        { image: 'assets/image/home/partner/indonesia/ubl.png', name: 'UBL', link: 'https://www.ubl.ac.id' },
+        { image: 'assets/image/home/partner/indonesia/uik.png', name: 'UIK', link: 'https://uik.ac.id' },
+        { image: 'assets/image/home/partner/indonesia/flame.png', name: 'Flame', link: 'https://www.flame.edu.in' },
+        { image: 'assets/image/home/partner/indonesia/upgris.png', name: 'UPGRIS', link: 'https://www.upgris.ac.id' },
+        { image: 'assets/image/home/partner/indonesia/sij.png', name: 'SIJ', link: 'https://sij.ac.id' },
+        { image: 'assets/image/home/partner/indonesia/up.png', name: 'UP', link: 'https://www.up.edu.ph' },
+        { image: 'assets/image/home/partner/indonesia/petra.png', name: 'PETRA', link: 'https://www.petra.ac.id' },
+        { image: 'assets/image/home/partner/indonesia/upt.png', name: 'UPT', link: 'https://www.upt.ac.id' },
+        { image: 'assets/image/home/partner/indonesia/usu.png', name: 'USU', link: 'https://www.usu.ac.id' },
+        { image: 'assets/image/home/partner/indonesia/ibs.png', name: 'IBS', link: 'https://www.ibs.ac.id' },
+        { image: 'assets/image/home/partner/indonesia/uds.png', name: 'UDS', link: 'https://www.uds.ac.id' }
     ],
     singapore: [
-        { image: '/assets/image/home/partner/singapore/sgx.png', name: 'SGX Group', link: 'https://www.sgx.com' },
-        { image: '/assets/image/home/partner/singapore/ite.png', name: 'ITE', link: 'https://www.ite.edu.sg' },
-        { image: '/assets/image/home/partner/singapore/nyp.png', name: 'NYP', link: 'https://www.nyp.edu.sg' },
-        { image: '/assets/image/home/partner/singapore/na.png', name: 'NA', link: 'https://www.na.edu.sg' },
-        { image: '/assets/image/home/partner/singapore/rp.png', name: 'RP', link: 'https://www.rp.edu.sg' },
-        { image: '/assets/image/home/partner/singapore/sp.png', name: 'SP', link: 'https://www.sp.edu.sg' },
-        { image: '/assets/image/home/partner/singapore/tp.png', name: 'TP', link: 'https://www.tp.edu.sg' },
-        { image: '/assets/image/home/partner/singapore/ntus.png', name: 'NTUS', link: 'https://www.ntu.edu.sg' },
-        { image: '/assets/image/home/partner/singapore/nus.png', name: 'NUS', link: 'https://www.nus.edu.sg' },
-        { image: '/assets/image/home/partner/singapore/smu.png', name: 'SMU', link: 'https://www.smu.edu.sg' },
-        { image: '/assets/image/home/partner/singapore/inc.png', name: 'INC', link: 'https://www.inc.com.sg' },
-        { image: '/assets/image/home/partner/singapore/suss.png', name: 'SUSS', link: 'https://www.suss.edu.sg' }
+        { image: 'assets/image/home/partner/singapore/sgx.png', name: 'SGX Group', link: 'https://www.sgx.com' },
+        { image: 'assets/image/home/partner/singapore/ite.png', name: 'ITE', link: 'https://www.ite.edu.sg' },
+        { image: 'assets/image/home/partner/singapore/nyp.png', name: 'NYP', link: 'https://www.nyp.edu.sg' },
+        { image: 'assets/image/home/partner/singapore/na.png', name: 'NA', link: 'https://www.na.edu.sg' },
+        { image: 'assets/image/home/partner/singapore/rp.png', name: 'RP', link: 'https://www.rp.edu.sg' },
+        { image: 'assets/image/home/partner/singapore/sp.png', name: 'SP', link: 'https://www.sp.edu.sg' },
+        { image: 'assets/image/home/partner/singapore/tp.png', name: 'TP', link: 'https://www.tp.edu.sg' },
+        { image: 'assets/image/home/partner/singapore/ntus.png', name: 'NTUS', link: 'https://www.ntu.edu.sg' },
+        { image: 'assets/image/home/partner/singapore/nus.png', name: 'NUS', link: 'https://www.nus.edu.sg' },
+        { image: 'assets/image/home/partner/singapore/smu.png', name: 'SMU', link: 'https://www.smu.edu.sg' },
+        { image: 'assets/image/home/partner/singapore/inc.png', name: 'INC', link: 'https://www.inc.com.sg' },
+        { image: 'assets/image/home/partner/singapore/suss.png', name: 'SUSS', link: 'https://www.suss.edu.sg' }
     ],
     thailand: [
-        { image: '/assets/image/home/partner/thailand/set.png', name: 'SET', link: 'https://www.set.or.th' },
-        { image: '/assets/image/home/partner/thailand/ku.png', name: 'KU', link: 'https://www.ku.ac.th' },
-        { image: '/assets/image/home/partner/thailand/cbs.png', name: 'CBS', link: 'https://www.cbs.chula.ac.th' },
-        { image: '/assets/image/home/partner/thailand/cmu.png', name: 'CMU', link: 'https://www.cmu.ac.th' },
-        { image: '/assets/image/home/partner/thailand/kbs.png', name: 'KBS', link: 'https://www.kbs.ac.th' }
+        { image: 'assets/image/home/partner/thailand/set.png', name: 'SET', link: 'https://www.set.or.th' },
+        { image: 'assets/image/home/partner/thailand/ku.png', name: 'KU', link: 'https://www.ku.ac.th' },
+        { image: 'assets/image/home/partner/thailand/cbs.png', name: 'CBS', link: 'https://www.cbs.chula.ac.th' },
+        { image: 'assets/image/home/partner/thailand/cmu.png', name: 'CMU', link: 'https://www.cmu.ac.th' },
+        { image: 'assets/image/home/partner/thailand/kbs.png', name: 'KBS', link: 'https://www.kbs.ac.th' }
     ]
 };
 
