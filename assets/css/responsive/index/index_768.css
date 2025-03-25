@@ -4,8 +4,51 @@
     /* Poster Section */
     /* --------------------------------------------------------------- */
     .poster-section {
-        margin-top: 60px;
-        height: 400px;
+        margin-top: 40px;
+        height: 100%;
+    }
+
+    .partners-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .partners-logos {
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .supported-logos,
+    .powered-logos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .support-title,
+    .power-title {
+        display: block;
+        margin-bottom: 15px;
+        /* Space between title and its logos */
+    }
+
+    .partners-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .supported-section,
+    .powered-section {
+        width: 100%;
+    }
+
+    .supported-logos img,
+    .powered-logos img {
+        height: 40px;
     }
 
     /* --------------------------------------------------------------- */
@@ -63,6 +106,16 @@
         font-size: 0.7rem;
         color: var(--text-black);
         margin: 5px 0;
+    }
+
+    .autoplay-progress {
+        right: 10px;
+        bottom: 180px;
+        z-index: 10;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        font-size: 0.6em;
     }
 
     /* --------------------------------------------------------------- */

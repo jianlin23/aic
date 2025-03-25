@@ -14,10 +14,12 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
     <!-- ... Google Material Icon ... -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Vendor Js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -40,180 +42,280 @@
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top animate__animated animate__fadeInDown">
+    <div class="container" style="border: 2px solid black;">
+
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top animate__animated animate__fadeInDown">
+                <div class="container">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <!-- Left side navigation -->
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link animate__animated animate__fadeIn" href="../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link animate__animated animate__fadeIn" href="../about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link animate__animated animate__fadeIn active" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    COUNTRIES
+                                    <span class="material-icons dropdown-icon">expand_more</span>
+                                </a>
+
+                                <div class="dropdown-menu animate__animated animate__fadeIn">
+                                    <a class="dropdown-item" href="regional.html">
+                                        <img src="../assets/image/home/flags/malaysia.png" alt="Malaysia"
+                                            class="flag-icon" style="visibility: hidden" />
+                                        REGIONAL
+                                    </a>
+                                    <a class="dropdown-item" href="malaysia.html">
+                                        <img src="../assets/image/home/flags/malaysia.png" alt="Malaysia"
+                                            class="flag-icon" />
+                                        MALAYSIA
+                                    </a>
+                                    <a class="dropdown-item" href="indonesia.html">
+                                        <img src="../assets/image/home/flags/indonesia.png" alt="Indonesia"
+                                            class="flag-icon" />
+                                        INDONESIA
+                                    </a>
+                                    <a class="dropdown-item" href="singapore.html">
+                                        <img src="../assets/image/home/flags/singapore.png" alt="Singapore"
+                                            class="flag-icon" />
+                                        SINGAPORE
+                                    </a>
+                                    <a class="dropdown-item" href="thailand.html">
+                                        <img src="../assets/image/home/flags/thailand.png" alt="Thailand"
+                                            class="flag-icon" />
+                                        THAILAND
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link animate__animated animate__fadeIn" href="../contact_us.html">CONTACT
+                                    US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link animate__animated animate__fadeIn" href="../tc.html">T&C</a>
+                            </li>
+                        </ul>
+
+                        <!-- Right side register button -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link register-btn animate__animated animate__fadeIn"
+                                    href="https://sso.cgsi.com/aic/">REGISTER</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Replace the prizes-section content -->
+        <section class="prizes-section">
             <div class="container">
-                <!-- Mobile Register Button -->
-                <a class="nav-link register-btn d-lg-none" href="https://sso.cgsi.com/aic/">REGISTER</a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link animate__animated animate__fadeIn" href="../index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link animate__animated animate__fadeIn" href="../about.html">ABOUT</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link animate__animated animate__fadeIn active" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                COUNTRIES
-                                <span class="material-icons dropdown-icon">expand_more</span>
-                            </a>
-                            <div class="dropdown-menu animate__animated animate__fadeIn active">
-                                <a class="dropdown-item" href="regional.html">
-                                    <img src="assets/image/home/flags/malaysia.png" alt="Malaysia" class="flag-icon"
-                                        style="visibility: hidden;">
-                                    REGIONAL
-                                </a>
-                                <a class="dropdown-item" href="malaysia.html">
-                                    <img src="../assets/image/home/flags/malaysia.png" alt="Malaysia" class="flag-icon">
-                                    MALAYSIA
-                                </a>
-                                <a class="dropdown-item" href="indonesia.html">
-                                    <img src="../assets/image/home/flags/indonesia.png" alt="Indonesia"
-                                        class="flag-icon">
-                                    INDONESIA
-                                </a>
-                                <a class="dropdown-item" href="singapore.html">
-                                    <img src="../assets/image/home/flags/singapore.png" alt="Singapore"
-                                        class="flag-icon">
-                                    SINGAPORE
-                                </a>
-                                <a class="dropdown-item" href="thailand.html">
-                                    <img src="../assets/image/home/flags/thailand.png" alt="Thailand" class="flag-icon">
-                                    THAILAND
-                                </a>
+                <div class="content">
+                    <div class="prizes-header scroll-animation" data-animation="animate__fadeInDown">
+                        <img src="../assets/image/home/flags/indonesia.png" alt="Indonesia" class="country-flag">
+                        <h1>INDONESIA</h1>
+                        <h2>Prizes of AIC 2025</h2>
+                    </div>
+
+                    <table class="prizes-table d-none d-md-table">
+                        <tr>
+                            <td></td>
+                            <td>Regional Level</td>
+                            <td>Country Level</td>
+                        </tr>
+                        <tr>
+                            <td>Winner</td>
+                            <td>SGD 20,000</td>
+                            <td>IDR 70,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>1st Runner-up</td>
+                            <td>SGD 10,000</td>
+                            <td>IDR 50,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>2nd Runner-up</td>
+                            <td>SGD 5,000</td>
+                            <td>IDR 35,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>4th Place</td>
+                            <td>SGD 1,000</td>
+                            <td>IDR 10,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>5th Place</td>
+                            <td>-</td>
+                            <td>IDR 10,000,000</td>
+                        </tr>
+                        <tr>
+                            <td>6th - 7th Place</td>
+                            <td>-</td>
+                            <td>IDR 5,000,000 each</td>
+                        </tr>
+                        <tr>
+                            <td>8th - 10th Place</td>
+                            <td>-</td>
+                            <td>IDR 2,500,000 each</td>
+                        </tr>
+                    </table>
+
+                    <!-- Mobile cards view -->
+                    <div class="prizes-cards d-md-none">
+                        <div class="prize-card">
+                            <div class="prize-position">Winner</div>
+                            <div class="prize-amounts">
+                                <div class="regional">
+                                    <span class="level">Regional Level</span>
+                                    <span class="amount">SGD 20,000</span>
+                                </div>
+                                <div class="country">
+                                    <span class="level">Country Level</span>
+                                    <span class="amount">IDR 70,000,000</span>
+                                </div>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link animate__animated animate__fadeIn" href="../contact_us.html">CONTACT
-                                US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link animate__animated animate__fadeIn" href="../tc.html">T&C</a>
-                        </li>
-                        <li class="nav-item ms-lg-3 d-none d-lg-block">
-                            <a class="nav-link register-btn animate__animated animate__fadeIn"
-                                href="https://sso.cgsi.com/aic/">REGISTER</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+                        </div>
 
-    <!-- Replace the prizes-section content -->
-    <section class="prizes-section">
-        <div class="container">
+                        <div class="prize-card">
+                            <div class="prize-position">1st Runner-up</div>
+                            <div class="prize-amounts">
+                                <div class="regional">
+                                    <span class="level">Regional Level</span>
+                                    <span class="amount">SGD 10,000</span>
+                                </div>
+                                <div class="country">
+                                    <span class="level">Country Level</span>
+                                    <span class="amount">IDR 50,000,000</span>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="content">
-                <div class="prizes-header scroll-animation" data-animation="animate__fadeInDown">
-                    <img src="../assets/image/home/flags/indonesia.png" alt="Indonesia" class="country-flag">
-                    <h1>INDONESIA</h1>
-                    <h2>Prizes of AIC 2025</h2>
-                </div>
+                        <div class="prize-card">
+                            <div class="prize-position">2nd Runner-up</div>
+                            <div class="prize-amounts">
+                                <div class="regional">
+                                    <span class="level">Regional Level</span>
+                                    <span class="amount">SGD 5,000</span>
+                                </div>
+                                <div class="country">
+                                    <span class="level">Country Level</span>
+                                    <span class="amount">IDR 35,000,000</span>
+                                </div>
+                            </div>
+                        </div>
 
-                <table class="prizes-table">
-                    <tr>
-                        <td></td>
-                        <td>Regional Level</td>
-                        <td>Country Level</td>
-                    </tr>
-                    <tr>
-                        <td>Winner</td>
-                        <td>SGD 20,000</td>
-                        <td>IDR 70,000,000</td>
-                    </tr>
-                    <tr>
-                        <td>1st Runner-up</td>
-                        <td>SGD 10,000</td>
-                        <td>IDR 50,000,000</td>
-                    </tr>
-                    <tr>
-                        <td>2nd Runner-up</td>
-                        <td>SGD 5,000</td>
-                        <td>IDR 35,000,000</td>
-                    </tr>
-                    <tr>
-                        <td>4th Place</td>
-                        <td>SGD 1,000</td>
-                        <td>IDR 10,000,000</td>
-                    </tr>
-                    <tr>
-                        <td>5th Place</td>
-                        <td>-</td>
-                        <td>IDR 10,000,000</td>
-                    </tr>
-                    <tr>
-                        <td>6th - 7th Place</td>
-                        <td>-</td>
-                        <td>IDR 5,000,000 each</td>
-                    </tr>
-                    <tr>
-                        <td>8th - 10th Place</td>
-                        <td>-</td>
-                        <td>IDR 2,500,000 each</td>
-                    </tr>
-                </table>
+                        <div class="prize-card">
+                            <div class="prize-position">4th Place</div>
+                            <div class="prize-amounts">
+                                <div class="regional">
+                                    <span class="level">Regional Level</span>
+                                    <span class="amount">SGD 1,000</span>
+                                </div>
+                                <div class="country">
+                                    <span class="level">Country Level</span>
+                                    <span class="amount">IDR 10,000,000</span>
+                                </div>
+                            </div>
+                        </div>
 
-                <div class="champions-section">
-                    <div class="champions-header scroll-animation" data-animation="animate__fadeInDown">
-                        <h2>Indonesia Champions of AIC 2024</h2>
-                    </div>
+                        <div class="prize-card">
+                            <div class="prize-position">5th Place</div>
+                            <div class="prize-amounts">
+                                <div class="country">
+                                    <span class="level">Country Level</span>
+                                    <span class="amount">IDR 10,000,000</span>
+                                </div>
+                            </div>
+                        </div>
 
-                    <table class="champions-table" id="champions2024">
+                        <div class="prize-card">
+                            <div class="prize-position">6th - 7th Place</div>
+                            <div class="prize-amounts">
+                                <div class="country">
+                                    <span class="level">Country Level</span>
+                                    <span class="amount">IDR 5,000,000 each</span>
+                                </div>
+                            </div>
+                        </div>
 
-                    </table>
-
-                </div>
-
-                <div class="champions-section">
-                    <div class="champions-header scroll-animation" data-animation="animate__fadeInDown">
-                        <h2>Indonesia Champions of AIC 2023</h2>
-                    </div>
-
-                    <table class="champions-table" id="champions2023">
-
-                    </table>
-
-                </div>
-
-                <div class="gallery-section">
-                    <div class="gallery-header scroll-animation" data-animation="animate__fadeInDown">
-                        <h2>Gallery</h2>
-                    </div>
-
-                    <div class="gallery-grid">
-
-                    </div>
-                </div>
-
-                <div class="partner-section">
-                    <h2 class="scroll-animation" data-animation="animate__fadeInUp">Supported By:</h2>
-                    <div class="partners-grid mt-5">
-                        <div class="row align-items-start g-4">
-                            <!-- ... partner items ... -->
+                        <div class="prize-card">
+                            <div class="prize-position">8th - 10th Place</div>
+                            <div class="prize-amounts">
+                                <div class="country">
+                                    <span class="level">Country Level</span>
+                                    <span class="amount">IDR 2,500,000 each</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="uni-partner-section">
-                    <h2 class="scroll-animation" data-animation="animate__fadeInUp">University Partners</h2>
-                    <div class="uni-partners-grid mt-5">
-                        <div class="row g-4">
-                            <!-- Will be populated by JavaScript -->
+                    <div class="champions-section">
+                        <div class="champions-header scroll-animation" data-animation="animate__fadeInDown">
+                            <h2>Indonesia Champions of AIC 2024</h2>
+                        </div>
+
+                        <table class="champions-table" id="champions2024">
+
+                        </table>
+
+                    </div>
+
+                    <div class="champions-section">
+                        <div class="champions-header scroll-animation" data-animation="animate__fadeInDown">
+                            <h2>Indonesia Champions of AIC 2023</h2>
+                        </div>
+
+                        <table class="champions-table" id="champions2023">
+
+                        </table>
+
+                    </div>
+
+                    <div class="gallery-section">
+                        <div class="gallery-header scroll-animation" data-animation="animate__fadeInDown">
+                            <h2>Gallery</h2>
+                        </div>
+
+                        <div class="gallery-grid">
+
                         </div>
                     </div>
-                </div>
 
+                    <div class="partner-section">
+                        <h2 class="scroll-animation" data-animation="animate__fadeInUp">Supported By:</h2>
+                        <div class="partners-grid mt-5">
+                            <div class="row align-items-start g-4">
+                                <!-- ... partner items ... -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uni-partner-section">
+                        <h2 class="scroll-animation" data-animation="animate__fadeInUp">University Partners</h2>
+                        <div class="uni-partners-grid mt-5">
+                            <div class="row g-4">
+                                <!-- Will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </div>
 
     <footer class="footer">
         <div class="container text-center">

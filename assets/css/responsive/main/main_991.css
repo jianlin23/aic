@@ -1,5 +1,6 @@
 /* Mobile navbar styles */
 @media (max-width: 991px) {
+
     /* --------------------------------------------------------------- */
     /* Navbar */
     /* --------------------------------------------------------------- */
@@ -33,29 +34,16 @@
         padding-left: 1.5rem;
     }
 
-    .register-btn {
-        position: absolute;
-        transform: none;
-        width: auto;
-        top: 5px;
-        right: 5%;
-        padding: 6px 15px !important;
-        font-size: 0.9rem;
-        z-index: 1001;
+    .navbar-nav .nav-item .register-btn {
+        margin-left: 2vw;
     }
 
     .navbar-collapse {
         position: relative;
         padding: 0;
-        margin-top: 0;
+        margin-top: 0.5rem;
         z-index: 1000;
         width: 100%;
-    }
-
-    .navbar-collapse.show~.register-btn.d-lg-none {
-        top: calc(100% - 15px);
-        right: 20px;
-        transition: all 0.3s ease;
     }
 
     .navbar-nav {
@@ -134,14 +122,6 @@
 
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    }
-
-    /* --------------------------------------------------------------- */
-    /* Register Button */
-    /* --------------------------------------------------------------- */
-    .register-btn{
-        right: 60px;
-        top: 14px;
     }
 
 }

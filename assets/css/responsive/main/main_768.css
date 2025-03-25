@@ -1,4 +1,5 @@
 @media (max-width: 576px) {
+
     /* --------------------------------------------------------------- */
     /* Navbar */
     /* --------------------------------------------------------------- */
@@ -9,6 +10,10 @@
     .navbar-collapse {
         margin: 0.5rem;
         padding: 1rem;
+    }
+
+    .navbar-nav .nav-item .register-btn {
+        margin-left: 3rem;
     }
 
     .nav-link {

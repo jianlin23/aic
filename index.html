@@ -2,130 +2,194 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | AIC</title>
-    <link rel="shortcut icon" href="https://aseaninvestmentchallenge.com/assets/images/favicon.ico">
+    <link rel="shortcut icon" href="https://aseaninvestmentchallenge.com/assets/images/favicon.ico" />
 
     <!-- Vendor CSS -->
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Animate CSS -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
     <!-- ... Google Material Icon ... -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Vendor Js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/responsive/main/main_991.css">
-    <link rel="stylesheet" href="assets/css/responsive/main/main_768.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/responsive/index/index_991.css">
-    <link rel="stylesheet" href="assets/css/responsive/index/index_768.css">
-
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive/main/main_991.css" />
+    <link rel="stylesheet" href="assets/css/responsive/main/main_768.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/responsive/index/index_991.css" />
+    <link rel="stylesheet" href="assets/css/responsive/index/index_768.css" />
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top animate__animated animate__fadeInDown">
+    <div class="container" style="border: 2px solid black;">
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top animate__animated animate__fadeInDown">
+                <div class="container">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <!-- Left side navigation -->
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link animate__animated animate__fadeIn active" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link animate__animated animate__fadeIn" href="about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link animate__animated animate__fadeIn" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    COUNTRIES
+                                    <span class="material-icons dropdown-icon">expand_more</span>
+                                </a>
+
+                                <div class="dropdown-menu animate__animated animate__fadeIn">
+                                    <a class="dropdown-item" href="country/regional.html">
+                                        <img src="assets/image/home/flags/malaysia.png" alt="Malaysia" class="flag-icon"
+                                            style="visibility: hidden" />
+                                        REGIONAL
+                                    </a>
+                                    <a class="dropdown-item" href="country/malaysia.html">
+                                        <img src="assets/image/home/flags/malaysia.png" alt="Malaysia"
+                                            class="flag-icon" />
+                                        MALAYSIA
+                                    </a>
+                                    <a class="dropdown-item" href="country/indonesia.html">
+                                        <img src="assets/image/home/flags/indonesia.png" alt="Indonesia"
+                                            class="flag-icon" />
+                                        INDONESIA
+                                    </a>
+                                    <a class="dropdown-item" href="country/singapore.html">
+                                        <img src="assets/image/home/flags/singapore.png" alt="Singapore"
+                                            class="flag-icon" />
+                                        SINGAPORE
+                                    </a>
+                                    <a class="dropdown-item" href="country/thailand.html">
+                                        <img src="assets/image/home/flags/thailand.png" alt="Thailand"
+                                            class="flag-icon" />
+                                        THAILAND
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link animate__animated animate__fadeIn" href="contact_us.html">CONTACT
+                                    US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link animate__animated animate__fadeIn" href="tc.html">T&C</a>
+                            </li>
+                        </ul>
+
+                        <!-- Right side register button -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link register-btn animate__animated animate__fadeIn"
+                                    href="https://sso.cgsi.com/aic/">REGISTER</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="poster-section">
+            <img src="assets/image/poster.png" alt="Poster" class="animate__animated animate__fadeIn" />
+            <!-- Desktop partners layout -->
+            <div class="partners-container d-none d-md-block">
+                <div class="partners-header">
+                    <span class="support-title">Supported by:</span>
+                    <span class="power-title">Powered by:</span>
+                </div>
+                <div class="partners-logos">
+                    <div class="supported-logos">
+                        <img src="assets/image/home/partner/main/1.png" />
+                        <img src="assets/image/home/partner/main/2.png" />
+                        <img src="assets/image/home/partner/main/3.png" />
+                        <img src="assets/image/home/partner/main/4.png" />
+                        <img src="assets/image/home/partner/main/5.png" />
+                        <img src="assets/image/home/partner/main/6.png" />
+                        <img src="assets/image/home/partner/main/7.png" />
+                    </div>
+                    <div class="powered-logos">
+                        <img src="assets/image/home/partner/main/8.png" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile partners layout -->
+            <div class="partners-container-mobile d-block d-md-none">
+                <div class="supported-section">
+                    <span class="support-title">Supported by:</span>
+                    <div class="supported-logos">
+                        <img src="assets/image/home/partner/main/1.png" />
+                        <img src="assets/image/home/partner/main/2.png" />
+                        <img src="assets/image/home/partner/main/3.png" />
+                        <img src="assets/image/home/partner/main/4.png" />
+                        <img src="assets/image/home/partner/main/5.png" />
+                        <img src="assets/image/home/partner/main/6.png" />
+                        <img src="assets/image/home/partner/main/7.png" />
+                    </div>
+                </div>
+                <div class="powered-section">
+                    <span class="power-title">Powered by:</span>
+                    <div class="powered-logos">
+                        <img src="assets/image/home/partner/main/8.png" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="champion-section">
             <div class="container">
-                <!-- Mobile Register Button -->
-                <a class="nav-link register-btn d-lg-none" href="https://sso.cgsi.com/aic/">REGISTER</a>
+                <h2 class="scroll-animation" data-animation="animate__fadeInUp">
+                    Regional Level Round Champions of AIC 2024
+                </h2>
+                <div id="championContainer"></div>
+            </div>
+        </section>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link animate__animated animate__fadeIn active" href="index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link animate__animated animate__fadeIn" href="about.html">ABOUT</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link animate__animated animate__fadeIn" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                COUNTRIES
-                                <span class="material-icons dropdown-icon">expand_more</span>
-                            </a>
-                            <div class="dropdown-menu animate__animated animate__fadeIn">
-                                <a class="dropdown-item" href="country/regional.html">
-                                    <img src="assets/image/home/flags/malaysia.png" alt="Malaysia" class="flag-icon" style="visibility: hidden;">
-                                    REGIONAL
-                                </a>
-                                <a class="dropdown-item" href="country/malaysia.html">
-                                    <img src="assets/image/home/flags/malaysia.png" alt="Malaysia" class="flag-icon">
-                                    MALAYSIA
-                                </a>
-                                <a class="dropdown-item" href="country/indonesia.html">
-                                    <img src="assets/image/home/flags/indonesia.png" alt="Indonesia" class="flag-icon">
-                                    INDONESIA
-                                </a>
-                                <a class="dropdown-item" href="country/singapore.html">
-                                    <img src="assets/image/home/flags/singapore.png" alt="Singapore" class="flag-icon">
-                                    SINGAPORE
-                                </a>
-                                <a class="dropdown-item" href="country/thailand.html">
-                                    <img src="assets/image/home/flags/thailand.png" alt="Thailand" class="flag-icon">
-                                    THAILAND
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link animate__animated animate__fadeIn" href="contact_us.html">CONTACT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link animate__animated animate__fadeIn" href="tc.html">T&C</a>
-                        </li>
-                        <li class="nav-item d-none d-lg-block">
-                            <a class="nav-link register-btn animate__animated animate__fadeIn" href="https://sso.cgsi.com/aic/">REGISTER</a>
-                        </li>
-                    </ul>
+        <section class="partner-section">
+            <div class="container">
+                <h2 class="scroll-animation" data-animation="animate__fadeInUp">
+                    Our Supporting Partners:
+                </h2>
+                <div class="partners-grid mt-5">
+                    <div class="row align-items-start g-4">
+                        <!-- ... partner items ... -->
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-
-    <section class="poster-section">
-        <img src="assets/image/poster.jpg" alt="Poster" class="animate__animated animate__fadeIn">
-    </section>
-
-    <section class="champion-section">
-        <div class="container">
-            <h2 class="scroll-animation" data-animation="animate__fadeInUp">Regional Level Round Champions of AIC 2024</h2>
-            <div id="championContainer">
-            </div>
-        </div>
-    </section>
-
-    <section class="partner-section">
-        <div class="container">
-            <h2 class="scroll-animation" data-animation="animate__fadeInUp">Our Supporting Partners:</h2>
-            <div class="partners-grid mt-5">
-                <div class="row align-items-start g-4">
-                    <!-- ... partner items ... -->
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer class="footer">
         <div class="container text-center">
-            <p>Copyrights <span class="material-icons" style="font-size: 0.7rem; vertical-align: middle;">copyright</span> 2025 All Rights Reserved.</p>
+            <p>
+                Copyrights
+                <span class="material-icons" style="font-size: 0.7rem; vertical-align: middle">copyright</span>
+                2025 All Rights Reserved.
+            </p>
         </div>
     </footer>
 
-    <!-- Custom JS -->    
+    <!-- Custom JS -->
     <script src="assets/js/index.js"></script>
     <script src="assets/js/scroll-animation.js"></script>
-
 </body>
 
 </html>

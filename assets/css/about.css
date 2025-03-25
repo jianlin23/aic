@@ -8,7 +8,7 @@
 }
 
 .about-section .container {
-    width: 850px;
+    width: 90%;
 }
 
 .about-header {
@@ -105,7 +105,7 @@
 }
 
 .path-section .container {
-    width: 850px;
+    width: 90%;
 }
 
 .path-header h3 {
@@ -242,7 +242,7 @@
 }
 
 .timeline-section .container {
-    width: 850px;
+    width: 90%;
 }
 
 .timeline-header {
@@ -371,7 +371,7 @@
 }
 
 .user-guide-section .container {
-    width: 850px;
+    width: 90%;
 }
 
 .guide-header {

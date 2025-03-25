@@ -14,10 +14,12 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
     <!-- ... Google Material Icon ... -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Vendor Js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -28,153 +30,167 @@
 </head>
 
 <body>
+    <div class="container" style="border: 2px solid black;">
 
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top animate__animated animate__fadeInDown">
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top animate__animated animate__fadeInDown">
+                <div class="container">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <!-- Left side navigation -->
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link animate__animated animate__fadeIn" href="../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link animate__animated animate__fadeIn" href="../about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link animate__animated animate__fadeIn active" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    COUNTRIES
+                                    <span class="material-icons dropdown-icon">expand_more</span>
+                                </a>
+
+                                <div class="dropdown-menu animate__animated animate__fadeIn">
+                                    <a class="dropdown-item" href="regional.html">
+                                        <img src="../assets/image/home/flags/malaysia.png" alt="Malaysia"
+                                            class="flag-icon" style="visibility: hidden" />
+                                        REGIONAL
+                                    </a>
+                                    <a class="dropdown-item" href="malaysia.html">
+                                        <img src="../assets/image/home/flags/malaysia.png" alt="Malaysia"
+                                            class="flag-icon" />
+                                        MALAYSIA
+                                    </a>
+                                    <a class="dropdown-item" href="indonesia.html">
+                                        <img src="../assets/image/home/flags/indonesia.png" alt="Indonesia"
+                                            class="flag-icon" />
+                                        INDONESIA
+                                    </a>
+                                    <a class="dropdown-item" href="singapore.html">
+                                        <img src="../assets/image/home/flags/singapore.png" alt="Singapore"
+                                            class="flag-icon" />
+                                        SINGAPORE
+                                    </a>
+                                    <a class="dropdown-item" href="thailand.html">
+                                        <img src="../assets/image/home/flags/thailand.png" alt="Thailand"
+                                            class="flag-icon" />
+                                        THAILAND
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link animate__animated animate__fadeIn" href="../contact_us.html">CONTACT
+                                    US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link animate__animated animate__fadeIn" href="../tc.html">T&C</a>
+                            </li>
+                        </ul>
+
+                        <!-- Right side register button -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link register-btn animate__animated animate__fadeIn"
+                                    href="https://sso.cgsi.com/aic/">REGISTER</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Replace the prizes-section content -->
+        <section class="prizes-section">
             <div class="container">
-                <!-- Mobile Register Button -->
-                <a class="nav-link register-btn d-lg-none" href="https://sso.cgsi.com/aic/">REGISTER</a>
+                <div class="prizes-header scroll-animation" data-animation="animate__fadeInDown">
+                    <h1>REGIONAL</h1>
+                    <h2>Prizes of AIC 2025</h2>
+                </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link animate__animated animate__fadeIn" href="../index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link animate__animated animate__fadeIn" href="../about.html">ABOUT</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link animate__animated animate__fadeIn active" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                COUNTRIES
-                                <span class="material-icons dropdown-icon">expand_more</span>
-                            </a>
-                            <div class="dropdown-menu animate__animated animate__fadeIn active">
-                                <a class="dropdown-item" href="regional.html">
-                                    <img src="assets/image/home/flags/malaysia.png" alt="Malaysia" class="flag-icon" style="visibility: hidden;">
-                                    REGIONAL
-                                </a>
-                                <a class="dropdown-item" href="malaysia.html">
-                                    <img src="../assets/image/home/flags/malaysia.png" alt="Malaysia" class="flag-icon">
-                                    MALAYSIA
-                                </a>
-                                <a class="dropdown-item" href="indonesia.html">
-                                    <img src="../assets/image/home/flags/indonesia.png" alt="Indonesia" class="flag-icon">
-                                    INDONESIA
-                                </a>
-                                <a class="dropdown-item" href="singapore.html">
-                                    <img src="../assets/image/home/flags/singapore.png" alt="Singapore" class="flag-icon">
-                                    SINGAPORE
-                                </a>
-                                <a class="dropdown-item" href="thailand.html">
-                                    <img src="../assets/image/home/flags/thailand.png" alt="Thailand" class="flag-icon">
-                                    THAILAND
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link animate__animated animate__fadeIn" href="../contact_us.html">CONTACT
-                                US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link animate__animated animate__fadeIn" href="../tc.html">T&C</a>
-                        </li>
-                        <li class="nav-item ms-lg-3 d-none d-lg-block">
-                            <a class="nav-link register-btn animate__animated animate__fadeIn" href="https://sso.cgsi.com/aic/">REGISTER</a>
-                        </li>
-                    </ul>
+                <table class="prizes-table">
+                    <tr class="table-header scroll-animation">
+                        <td></td>
+                        <td>(Regional Level)</td>
+                    </tr>
+                    <tr>
+                        <td>Winner</td>
+                        <td>SGD 20,000</td>
+                    </tr>
+                    <tr>
+                        <td>1st Runner-up</td>
+                        <td>SGD 10,000</td>
+                    </tr>
+                    <tr>
+                        <td>2nd Runner-up</td>
+                        <td>SGD 5,000</td>
+                    </tr>
+                    <tr>
+                        <td>4th Place</td>
+                        <td>SGD 1,000</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="champions-section">
+            <div class="container">
+                <div class="champions-header scroll-animation" data-animation="animate__fadeInDown">
+                    <h2>Regional Champions of AIC 2024</h2>
+                </div>
+
+                <table class="champions-table">
+                    <tr>
+                        <td>Winner</td>
+                        <td>
+                            <div class="winner-name">Muhammad Zulfakar Aiman Bin Zulkarnain</div>
+                            <div class="university">Universiti Teknologi MARA, Segamat Campus</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1st Runner-up</td>
+                        <td>
+                            <div class="winner-name">Kansorn Kanpinit</div>
+                            <div class="university">Mahidol University</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2nd Runner-up</td>
+                        <td>
+                            <div class="winner-name">Reynald Hartanto Gunawan</div>
+                            <div class="university">Universitas Kristen Petra</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4th Place</td>
+                        <td>
+                            <div class="winner-name">Ray Tng</div>
+                            <div class="university">Ngee Ann Polytechnic</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-header scroll-animation" data-animation="animate__fadeInDown">
+                    <h2>Gallery</h2>
+                </div>
+
+                <div class="gallery-grid">
+
                 </div>
             </div>
-        </nav>
-    </header>
+        </section>
 
-    <!-- Replace the prizes-section content -->
-    <section class="prizes-section">
-        <div class="container">
-            <div class="prizes-header scroll-animation" data-animation="animate__fadeInDown">
-                <h1>REGIONAL</h1>
-                <h2>Prizes of AIC 2025</h2>
-            </div>
-
-            <table class="prizes-table">
-                <tr class="table-header scroll-animation">
-                    <td></td>
-                    <td>(Regional Level)</td>
-                </tr>
-                <tr>
-                    <td>Winner</td>
-                    <td>SGD 20,000</td>
-                </tr>
-                <tr>
-                    <td>1st Runner-up</td>
-                    <td>SGD 10,000</td>
-                </tr>
-                <tr>
-                    <td>2nd Runner-up</td>
-                    <td>SGD 5,000</td>
-                </tr>
-                <tr>
-                    <td>4th Place</td>
-                    <td>SGD 1,000</td>
-                </tr>
-            </table>
-        </div>
-    </section>
-
-    <section class="champions-section">
-        <div class="container">
-            <div class="champions-header scroll-animation" data-animation="animate__fadeInDown">
-                <h2>Regional Champions of AIC 2024</h2>
-            </div>
-
-            <table class="champions-table">
-                <tr>
-                    <td>Winner</td>
-                    <td>
-                        <div class="winner-name">Muhammad Zulfakar Aiman Bin Zulkarnain</div>
-                        <div class="university">Universiti Teknologi MARA, Segamat Campus</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1st Runner-up</td>
-                    <td>
-                        <div class="winner-name">Kansorn Kanpinit</div>
-                        <div class="university">Mahidol University</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2nd Runner-up</td>
-                    <td>
-                        <div class="winner-name">Reynald Hartanto Gunawan</div>
-                        <div class="university">Universitas Kristen Petra</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>4th Place</td>
-                    <td>
-                        <div class="winner-name">Ray Tng</div>
-                        <div class="university">Ngee Ann Polytechnic</div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </section>
-
-    <section class="gallery-section">
-        <div class="container">
-            <div class="gallery-header scroll-animation" data-animation="animate__fadeInDown">
-                <h2>Gallery</h2>
-            </div>
-
-            <div class="gallery-grid">
-                
-            </div>
-        </div>
-    </section>
+    </div>
 
     <footer class="footer">
         <div class="container text-center">

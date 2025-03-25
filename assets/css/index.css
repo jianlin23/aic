@@ -14,6 +14,59 @@
     object-fit: cover;
 }
 
+.poster-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary);
+    padding: 20px;
+}
+
+.poster-section img {
+    max-height: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.partners-container {
+    width: 100%;
+}
+
+.partners-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.support-title,
+.power-title {
+    color: var(--text-black);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.supported-logos,
+.powered-logos {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.supported-logos img,
+.powered-logos img {
+    max-width: 80px;
+    object-fit: contain;
+}
+
 /* --------------------------------------------------------------- */
 /* Champion Section */
 /* --------------------------------------------------------------- */
@@ -30,31 +83,34 @@
 .champion-section h2 {
     font-size: 1rem;
     margin-bottom: 20px;
+    color: #3F3E5D;
     font-weight: bold;
-    animation: fadeInUp 1s ease;
 }
 
 .champion-image {
-    max-width: 75%;
     margin: 30px auto;
-    position: relative;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 50px 1fr;
+    gap: 25px;
+    align-items: start;
 }
 
 .champion-image img {
+    aspect-ratio: 4/3;
     width: 100%;
-    height: 500px;
+    height: auto;
     object-fit: cover;
+    grid-column: 1 / span 3;
+    grid-row: 2;
 }
 
 .nav-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(10%);
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
     background-color: transparent;
-    color: black;
-    border: 5px solid black;
+    color: #3F3E5D;
+    border: 5px solid #3F3E5D;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -80,46 +136,81 @@
 }
 
 .nav-arrow.prev {
-    left: -75px;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: end;
 }
 
 .nav-arrow.next {
-    right: -75px;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: start;
 }
 
 .champion-details {
     margin-top: 30px;
     animation-duration: 1s;
+    color: #3F3E5D;
 }
 
 .champion-details h3 {
-    font-size: 1rem;
-    color: var(--text-black);
+    font-size: 20px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .prize-amount {
-    font-size: 0.9rem;
-    color: var(--text-black);
+    font-size: 20px;
     margin: 15px 0;
 }
 
 .champion-details p {
-    font-size: 0.9rem;
-    color: var(--text-black);
+    font-size: 20px;
     margin: 5px 0;
+}
+
+.championSwiper {
+    position: relative;
+    width: 100%;
+}
+
+.championSwiper .swiper-slide {
+    text-align: center;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 240px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--text-black);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--text-black);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--text-black);
 }
 
 /* --------------------------------------------------------------- */
@@ -135,11 +226,10 @@
 }
 
 .partner-section h2 {
-    font-size: 1rem;
+    font-size: 24px;
     padding-bottom: 30px;
     font-weight: bold;
-    animation: fadeInUp 1s ease;
-    color: var(--text-black);
+    color: #707070;
 }
 
 .country-name {
