@@ -64,30 +64,16 @@
 
     .champion-section h2 {
         font-size: 0.7rem;
+        margin: 0;
+    }
+
+    .champion-image {
+        margin: 0;
     }
 
     .champion-image img {
         width: 100%;
         height: 100%;
-    }
-
-    .nav-arrow {
-        width: 28px;
-        height: 28px;
-        border: 4px solid black;
-    }
-
-    .nav-arrow .material-icons {
-        font-size: 36px;
-        line-height: 1;
-    }
-
-    .nav-arrow.prev {
-        left: -40px;
-    }
-
-    .nav-arrow.next {
-        right: -40px;
     }
 
     .champion-details h3 {
@@ -121,12 +107,16 @@
     /* --------------------------------------------------------------- */
     /* Partner Section */
     /* --------------------------------------------------------------- */
+    .partner-section {
+        padding: 10px;
+    }
+
     .partner-section .container {
         max-width: 400px;
     }
 
     .partner-section h2 {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         padding-bottom: 0;
     }
 
@@ -135,16 +125,16 @@
     }
 
     .country-name {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .country-name {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .partner-logo {
         width: 100%;
-        max-width: 120px;
+        max-width: 70px;
         height: auto;
         margin: 0 auto;
         display: block;
@@ -152,8 +142,10 @@
 
     .malaysia-first-logo {
         width: 100%;
-        transform: scale(0.8);
+        max-width: 120px;
         display: flex;
         justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
 }

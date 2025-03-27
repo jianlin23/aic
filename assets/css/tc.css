@@ -1,5 +1,6 @@
 .tc-section {
-    padding: 120px 0 80px;
+    margin-top: 100px;
+    padding: 40px 0 20px;
 }
 
 .tc-header {
@@ -8,23 +9,17 @@
 }
 
 .tc-header h1 {
-    color: var(--text-black);
-    font-size: 2.5rem;
+    color: #3F3E5D;
+    font-size: 34px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.tc-content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px;
-}
-
 .tc-section h2 {
-    color: var(--text-black);
-    font-size: 1.5rem;
+    color: #3F3E5D;
+    font-size: 20px;
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .tc-section .section-content {
@@ -32,15 +27,13 @@
 }
 
 .tc-section ol {
-    padding-left: 20px;
-    counter-reset: item;
-    color: var(--text-black);
+    font-size: 20px;
+    color: #3F3E5D;
 }
 
 .tc-section ol>li {
     margin-bottom: 15px;
     position: relative;
-    padding-left: 10px;
 }
 
 .tc-section ol>li ol {
@@ -52,30 +45,48 @@
     margin-bottom: 8px;
 }
 
+.decimal-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.decimal-list li {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.decimal-list li::before {
+    position: absolute;
+    left: 0;
+}
+
 .tc-btn {
     background: var(--white);
-    color: var(--text-black);
-    border: 2px solid var(--text-black);
+    color:#3F3E5D;
+    border: 2px solid #3F3E5D;
     padding: 15px 30px;
     font-weight: bold;
-    font-size: 1.1rem;
     transition: all 0.3s ease;
     text-decoration: none;
+    width: 568px;
+    height: 67px;
+    font-family: var(--font-primary);
+    font-size: 26px;
 }
 
 .tc-btn:hover {
-    background: var(--dark-blue);
+    background: #224187;
     color: var(--white);
     transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {
     .tc-section {
-        padding: 100px 20px 60px;
+        padding: 60px 0;
     }
 
     .tc-header h1 {
-        font-size: 1rem;
+        font-size: 24px;
         margin-bottom: 10px;
     }
 
@@ -85,13 +96,13 @@
         font-weight: 600;
     }
 
-    .tc-content {
-        padding: 25px;
-        font-size: 0.8rem;
+    .tc-content,* {
+        padding: 1px;
+        font-size: 1.1rem;
     }
 
     .tc-btn {
         padding: 10px 15px;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }

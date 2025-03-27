@@ -17,7 +17,7 @@ h1 {
 
 .navbar .nav-link {
     font-family: var(--font-primary);
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .register-btn {
@@ -26,7 +26,6 @@ h1 {
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -36,17 +35,19 @@ h1 {
 /* --------------------------------------------------------------- */
 .navbar {
     background-color: var(--dark-blue) !important;
-    padding: 1vw 12vw;
     width: 100%;
+    padding: 20px 0;
     transition: all 0.3s ease;
+}
+
+.navbar .container {
+    padding: 0 !important;
 }
 
 .nav-link {
     color: white !important;
-    margin: 0 0.5vw;
     position: relative;
     transition: all 0.3s ease;
-    font-size: 0.75rem;
     padding: 0 !important;
     padding: 16px 24px !important;
 }
@@ -136,9 +137,9 @@ h1 {
 }
 
 .footer p {
-    color: rgba(0, 0, 0, 0.5);
+    color: #707070;
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 20px;
     font-weight: bold;
     text-transform: capitalize;
 }

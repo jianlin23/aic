@@ -935,7 +935,6 @@ const universityPartners = {
     ],
 };
 
-
 function generateChampionsTable(year, country) {
     const tableClass = `champions${year}`;
     const table = document.getElementById(tableClass);
@@ -957,7 +956,7 @@ function generateChampionsTable(year, country) {
 
     table.innerHTML = rows;
 }
-
+// Then update the renderPartners function
 function renderPartners(country) {
     const container = document.querySelector('.partners-grid .row');
     if (!container) return;
@@ -965,61 +964,70 @@ function renderPartners(country) {
     const partnerList = partners[country];
     if (!partnerList) return;
 
-    // Split partners into groups of 5
-    const rows = [];
-    for (let i = 0; i < partnerList.length; i += 5) {
-        rows.push(partnerList.slice(i, i + 5));
-    }
+    container.innerHTML = ''; // Clear existing content
+    let rowIndex = 1;
 
-    const rowsHtml = rows.map((rowPartners, rowIndex) => `
-    <div class="row mb-4 scroll-animation" data-animation="animate__fadeInUp">
-        <div class="col-12">
-            <div class="d-flex justify-content-center align-items-center">
-                ${rowPartners.map((partner, index) => `
-                    <div class="mx-4 scroll-animation" data-animation="animate__fadeIn" style="animation-delay: ${((rowIndex * 5 + index) * 0.1).toFixed(1)}s;">
-                        ${partner.link ? `
-                            <a href="${partner.link}" target="_blank" rel="noopener noreferrer">
-                                <img src="${partner.image}" alt="${partner.name}" class="partner-logo">
-                            </a>
-                        ` : `
-                            <img src="${partner.image}" alt="${partner.name}" class="partner-logo">
-                        `}
-                    </div>
-                `).join('')}
-            </div>
-        </div>
-    </div>
-`).join('');
-
-    container.innerHTML = rowsHtml;
-}
-
-function renderUniversityPartners(country) {
-    const container = document.querySelector('.uni-partners-grid .row');
-    if (!container) return;
-
-    const uniList = universityPartners[country];
-    if (!uniList) return;
-
-    // Split universities into groups of 3 for each row
-    const rows = [];
-    for (let i = 0; i < uniList.length; i += 3) {
-        rows.push(uniList.slice(i, i + 3));
-    }
-
-    const rowsHtml = rows.map((rowUnis, rowIndex) => `
-        <div class="row">
-            ${rowUnis.map((uni, index) => `
-                <div class="col-12 col-md-4 p-0">
-                    <div class="uni-partner-card">
-                        <div class="uni-name">${uni.name}</div>
+    // Special handling for Malaysia's single logo
+    if (country === 'malaysia') {
+        const rowHtml = `
+                <div class="row mb-4 scroll-animation partner-row-${rowIndex}" data-animation="animate__fadeInUp">
+                    <div class="col-12">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-4 col-md-2 scroll-animation partner-logo-${rowIndex}" data-animation="animate__fadeIn">
+                                ${partnerList[0].link ? `
+                                    <a href="${partnerList[0].link}" target="_blank" rel="noopener noreferrer">
+                                        <img src="${partnerList[0].image}" alt="${partnerList[0].name}" class="partner-logo">
+                                    </a>
+                                ` : `
+                                    <img src="${partnerList[0].image}" alt="${partnerList[0].name}" class="partner-logo">
+                                `}
+                            </div>
+                        </div>
                     </div>
                 </div>
-            `).join('')}
-        </div>
-    `).join('');
+            `;
+        container.innerHTML = rowHtml;
+        return;
+    }
 
-    container.innerHTML = rowsHtml;
+    // Change number of items per row based on screen size
+    const itemsPerRow = window.innerWidth <= 768 ? 3 : 5;
+    const rows = Math.ceil(partnerList.length / itemsPerRow);
+
+    for (let i = 0; i < rows; i++) {
+        const startIndex = i * itemsPerRow;
+        const partnersInRow = partnerList.slice(startIndex, startIndex + itemsPerRow);
+
+        // Adjust column width for mobile (4 for 3 items per row)
+        const colWidth = window.innerWidth <= 768 ? 4 : 2;
+
+        const isMalaysiaFirstRow = country === 'malaysia' && i === 0;
+        const justifyContent = partnersInRow.length === 1 ? 'justify-content-start' :
+            partnersInRow.length < itemsPerRow ? 'justify-content-center' :
+                'justify-content-between';
+
+        const rowHtml = `
+            <div class="row mb-4 scroll-animation partner-row-${rowIndex}" data-animation="animate__fadeInUp">
+                <div class="col-12">
+                    <div class="row g-2 g-md-4 align-items-center ${justifyContent}">
+                        ${partnersInRow.map((partner, index) => `
+                            <div class="col-${colWidth} col-md-2 scroll-animation partner-logo-${rowIndex} ${isMalaysiaFirstRow ? 'malaysia-first-logo' : ''}" data-animation="animate__fadeIn">
+                                ${partner.link ? `
+                                    <a href="${partner.link}" target="_blank" rel="noopener noreferrer">
+                                        <img src="${partner.image}" alt="${partner.name}" class="partner-logo">
+                                    </a>
+                                ` : `
+                                    <img src="${partner.image}" alt="${partner.name}" class="partner-logo">
+                                `}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            </div>
+        `;
+        container.innerHTML += rowHtml;
+        rowIndex++;
+    }
 }
 
 function generateGallery(country) {
@@ -1122,6 +1130,50 @@ function generateGallery(country) {
     });
 }
 
+function renderUniversityPartners(country) {
+    const container = document.querySelector('.uni-partners-grid .row');
+    if (!container) return;
+
+    const uniList = universityPartners[country];
+    if (!uniList) return;
+
+    // Split universities into groups of 3 for each row
+    const rows = [];
+    for (let i = 0; i < uniList.length; i += 3) {
+        rows.push(uniList.slice(i, i + 3));
+    }
+
+    const rowsHtml = rows.map((rowUnis, rowIndex) => `
+        <div class="row">
+            ${rowUnis.map((uni, index) => `
+                <div class="col-12 col-md-4 p-0">
+                    <div class="uni-partner-card">
+                        <div class="uni-name">${uni.name}</div>
+                    </div>
+                </div>
+            `).join('')}
+        </div>
+    `).join('');
+
+    container.innerHTML = rowsHtml;
+}
+
+// Update the resize event listener
+let prevWidth = window.innerWidth;
+window.addEventListener('resize', () => {
+    if (prevWidth !== window.innerWidth) {
+        prevWidth = window.innerWidth;
+        const container = document.querySelector('.partners-grid .row');
+        if (container) {
+            const currentPath = window.location.pathname;
+            const countryMatch = currentPath.match(/\/country\/(\w+)\.html$/);
+            if (!countryMatch) return;
+
+            const currentCountry = countryMatch[1].toLowerCase();
+            renderPartners(currentCountry); // Pass the country parameter
+        }
+    }
+});
 // Update the DOMContentLoaded event listener
 document.addEventListener('DOMContentLoaded', () => {
     const currentPath = window.location.pathname;
@@ -1133,6 +1185,6 @@ document.addEventListener('DOMContentLoaded', () => {
     generateChampionsTable(2024, currentCountry);
     generateChampionsTable(2023, currentCountry);
     generateGallery(currentCountry);
-    renderPartners(currentCountry);
     renderUniversityPartners(currentCountry);
+    renderPartners(currentCountry);
 });

@@ -4,12 +4,11 @@
 .about-section {
     margin-top: 100px;
     padding: 40px 0 20px;
-    background: var(--primary);
 }
 
-.about-section .container {
+/* .about-section .container {
     width: 90%;
-}
+} */
 
 .about-header {
     text-align: center;
@@ -17,9 +16,9 @@
 }
 
 .about-header h1 {
-    color: var(--text-black);
+    color: #3F3E5D;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 34px;
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
@@ -38,14 +37,12 @@
 
 .about-content {
     margin: 0 auto;
-    font-size: 1rem;
-    color: var(--text-black);
+    font-size: 20px;
+    color: #3F3E5D;
 }
 
 .about-description {
-    color: var(--text-black);
     line-height: 1.8;
-    font-size: 1rem;
     margin-bottom: 40px;
 }
 
@@ -56,34 +53,6 @@
 .benefits-list {
     padding: 0;
     padding-left: 15px;
-    color: var(--text-black);
-}
-
-.about-content h2 {
-    font-size: 0.8rem;
-}
-
-.benefit-item {
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.benefit-item:hover {
-    transform: translateY(-5px);
-}
-
-.benefit-content {
-    display: flex;
-    align-items: flex-start;
-    text-align: left;
-}
-
-.benefit-content .material-icons {
-    margin-top: 3px;
 }
 
 .prize-section {
@@ -93,8 +62,15 @@
 }
 
 .prize-section h3 {
-    font-size: 1.2rem;
+    font-size: 24px;
+    color: #3F3E5D;
+    font-weight: bold;
     text-align: center;
+}
+
+.prize-section p{
+    font-size: 20px;
+    color: #3F3E5D;
 }
 
 /* /////////////////////////////////////////////////// */
@@ -104,14 +80,20 @@
     padding: 40px 0 20px;
 }
 
-.path-section .container {
+/* .path-section .container {
     width: 90%;
-}
+} */
 
 .path-header h3 {
     text-align: center;
-    font-size: 1.2rem;
-    color: var(--text-black);
+    font-size: 24px;
+    color: #3F3E5D;
+    font-weight: bold;
+}
+
+.path-section p{
+    font-size: 20px;
+    color: #3F3E5D;
 }
 
 .path-description {
@@ -135,10 +117,29 @@
     margin: 30px 0;
 }
 
+/* Add column width specifications */
+.criteria-table th:nth-child(1),
+.criteria-table td:nth-child(1) {
+    width: 190px;  /* First column */
+    min-height: 28px;
+}
+
+.criteria-table th:nth-child(2),
+.criteria-table td:nth-child(2) {
+    width: 400px;  /* Second column */
+    min-height: 150px;
+}
+
+.criteria-table th:nth-child(3),
+.criteria-table td:nth-child(3) {
+    width: 400px;  /* Third column */
+    min-height: 150px;
+}
+
 .criteria-table tr td,
 .criteria-table tr th{
     margin-right: 20px;
-    border: 3px solid var(--text-black);
+    border: 3px solid #3D3D5C;
 }
 
 .criteria-table tr:nth-child(1) th{
@@ -158,11 +159,11 @@
 
 .criteria-table th {
     background: var(--orange);
-    color: var(--text-black);
+    color: #3F3E5D;
     padding: 25px;
     text-align: center;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 24px;
 }
 
 .criteria-table td {
@@ -176,18 +177,23 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--text-black);
-    font-weight: 500;
+    color: #3F3E5D;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .level-content {
-    color: var(--text-black);
+    font-size: 20px;
+    color: #3F3E5D;
+    font-weight: bold;
 }
 
 .criteria-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    color: #3F3E5D;
+    font-weight: bold;
 }
 
 .criteria-list li {
@@ -198,13 +204,13 @@
     transition: all 0.3s ease;
     align-items: center;
     cursor: default;
-    font-size: 0.9rem;
+    font-size: 20px;
     margin: 0;
 }
 
 .percentage-icon {
-    color: var(--text-black);
-    font-size: 1.2rem;
+    color: #3F3E5D;
+    font-size: 16px;
     margin-right: 10px;
     opacity: 0.8;
 }
@@ -214,21 +220,44 @@
     content: none;
 }
 
-.criteria-btn,
-.guide-btn {
+.criteria-button-container,
+.guide-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.criteria-btn{
     background: var(--white);
-    color: var(--text-black);
-    border: 2px solid var(--text-black);
+    color: #3F3E5D;
+    border: 2px solid #3F3E5D;
+    font-family: var(--font-primary);
     padding: 15px 30px;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 26px;
     border-radius: none;
     text-decoration: none;
+    width: 425px;
+    height: 67px;
+}
+
+.guide-btn {
+    background: var(--white);
+    color: #3F3E5D;
+    border: 2px solid #3F3E5D;
+    font-family: var(--font-primary);
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 26px;
+    border-radius: none;
+    text-decoration: none;
+    width: 546px;
+    height: 67px;
 }
 
 .criteria-btn:hover,
 .guide-btn:hover {
-    background: var(--text-black);
+    background: #224187;
     color: var(--white);
     transform: translateY(-3px);
 }
@@ -238,12 +267,11 @@
 /* ///////////////////////////////////////////////////////////////////////////////////// */
 .timeline-section {
     padding: 40px 0 20px;
-    background: linear-gradient(135deg, var(--bg-light) 0%, var(--white) 100%);
 }
 
-.timeline-section .container {
+/* .timeline-section .container {
     width: 90%;
-}
+} */
 
 .timeline-header {
     text-align: center;
@@ -251,8 +279,8 @@
 }
 
 .timeline-header h2 {
-    color: var(--text-black);
-    font-size: 1rem;
+    color: #3F3E5D;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -321,13 +349,13 @@
 }
 
 .timeline-date h3 {
-    color: var(--text-black);
-    font-size: 1.2rem;
     font-weight: bold;
     display: inline-block;
     padding: 8px 20px;
     background: var(--orange-light);
     border-radius: 20px;
+    font-size: 20px;
+    color: #3F3E5D;
 }
 
 .timeline-content {
@@ -336,6 +364,8 @@
     border-radius: 15px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
+    font-size: 20px;
+    color: #3F3E5D;
 }
 
 .timeline-content:hover {
@@ -344,14 +374,13 @@
 }
 
 .timeline-content h4 {
-    color: var(--text-black);
+    font-size: 20px;
+    color: #3F3E5D;
     font-weight: bold;
     margin-bottom: 15px;
-    font-size: 1rem;
 }
 
 .timeline-content p {
-    color: var(--text-black);
     margin-bottom: 10px;
 }
 
@@ -370,9 +399,9 @@
     background: linear-gradient(135deg, var(--white) 0%, var(--bg-light) 100%);
 }
 
-.user-guide-section .container {
+/* .user-guide-section .container {
     width: 90%;
-}
+} */
 
 .guide-header {
     text-align: center;
@@ -380,23 +409,25 @@
 }
 
 .guide-header h2 {
-    color: var(--text-black);
-    font-size: 1.5rem;
+    font-size: 24px;
+    color: #3F3E5D;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .guide-subtitle {
-    color: var(--text-black);
-    font-size: 1rem;
+    font-size: 20px;
+    color: #3F3E5D;
     text-align: justify;
+    font-weight: bold;
     margin: 0 auto 15px;
 }
 
 .guide-message {
-    color: var(--text-black);
-    font-size: 1rem;
+    font-size: 20px;
+    color: #3F3E5D;
     text-align: justify;
+    font-weight: bold;
 }
 
 .guide-btn .material-icons {

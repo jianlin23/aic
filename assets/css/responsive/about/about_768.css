@@ -1,6 +1,7 @@
 @media screen and (max-width: 768px) {
     .about-section .container {
         width: 400px;
+        padding: 60px 0;
     }
 
     .path-section .container {
@@ -72,4 +73,96 @@
         font-size: 0.6rem;
     }
 
+
+    .guide-btn,
+    .criteria-btn {
+        width: 60%;
+        height: auto;
+    }
+
+    .criteria-table tr:nth-child(2) td:nth-child(1),
+    .criteria-table tr:nth-child(2) td:nth-child(2),
+    .criteria-table tr:nth-child(2) td:nth-child(3) {
+        border-bottom: 3px solid #3D3D5C;
+    }
+
+}
+
+/* ... existing code remains unchanged ... */
+
+@media screen and (max-width: 480px) {
+
+    .about-section .container,
+    .path-section .container,
+    .timeline-section .container,
+    .user-guide-section .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .about-header h1 {
+        font-size: 24px;
+    }
+
+    .about-desc,
+    .path-description p {
+        font-size: 16px;
+    }
+
+    .timeline-item {
+        padding-left: 50px;
+        padding-right: 15px;
+    }
+
+    .timeline::after {
+        left: 21px;
+    }
+
+    .timeline-item::after {
+        left: 8px !important;
+        width: 20px;
+        height: 20px;
+    }
+
+    .timeline-date h3 {
+        font-size: 0.875rem;
+        padding: 6px 12px;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+    .timeline-content h4 {
+        font-size: 0.875rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.8rem;
+    }
+
+    .criteria-btn,
+    .guide-btn {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 0.875rem;
+    }
+
+    .mobile-table-title {
+        font-size: 0.875rem;
+        padding: 8px 12px;
+    }
+
+    .challenge-content span,
+    .level-content p {
+        font-size: 0.8rem;
+    }
+
+    .criteria-list li {
+        font-size: 0.7rem;
+    }
+
+    .percentage-icon {
+        font-size: 14px;
+    }
 }

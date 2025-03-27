@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    <div class="container" style="border: 2px solid black;">
+    <div class="container">
 
         <header>
             <nav class="navbar navbar-expand-lg fixed-top animate__animated animate__fadeInDown">
@@ -114,7 +114,8 @@
                     <h2>Prizes of AIC 2025</h2>
                 </div>
 
-                <table class="prizes-table">
+                <!-- Desktop table view -->
+                <table class="prizes-table d-none d-md-table">
                     <tr class="table-header scroll-animation">
                         <td></td>
                         <td>(Regional Level)</td>
@@ -136,16 +137,60 @@
                         <td>SGD 1,000</td>
                     </tr>
                 </table>
+
+                <!-- Mobile cards view -->
+                <div class="prizes-cards d-md-none">
+                    <div class="prize-card scroll-animation" data-animation="animate__fadeInUp">
+                        <div class="prize-position">Winner</div>
+                        <div class="prize-amounts">
+                            <div class="regional">
+                                <span class="level">Regional Level</span>
+                                <span class="amount">SGD 20,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prize-card scroll-animation" data-animation="animate__fadeInUp">
+                        <div class="prize-position">1st Runner-up</div>
+                        <div class="prize-amounts">
+                            <div class="regional">
+                                <span class="level">Regional Level</span>
+                                <span class="amount">SGD 10,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prize-card scroll-animation" data-animation="animate__fadeInUp">
+                        <div class="prize-position">2nd Runner-up</div>
+                        <div class="prize-amounts">
+                            <div class="regional">
+                                <span class="level">Regional Level</span>
+                                <span class="amount">SGD 5,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prize-card scroll-animation" data-animation="animate__fadeInUp">
+                        <div class="prize-position">4th Place</div>
+                        <div class="prize-amounts">
+                            <div class="regional">
+                                <span class="level">Regional Level</span>
+                                <span class="amount">SGD 1,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <section class="champions-section">
             <div class="container">
                 <div class="champions-header scroll-animation" data-animation="animate__fadeInDown">
-                    <h2>Regional Champions of AIC 2024</h2>
+                    <h2>Regional Champions of AIC 2023</h2>
                 </div>
 
-                <table class="champions-table">
+                <table class="champions-table d-none d-md-table">
                     <tr>
                         <td>Winner</td>
                         <td>
@@ -175,6 +220,42 @@
                         </td>
                     </tr>
                 </table>
+
+                <!-- Mobile cards view -->
+                <div class="champions-cards d-md-none">
+                    <div class="champion-card scroll-animation" data-animation="animate__fadeInUp">
+                        <div class="champion-position">Winner</div>
+                        <div class="champion-info">
+                            <div class="winner-name">Muhammad Zulfakar Aiman Bin Zulkarnain</div>
+                            <div class="university">Universiti Teknologi MARA, Segamat Campus</div>
+                        </div>
+                    </div>
+
+                    <div class="champion-card scroll-animation" data-animation="animate__fadeInUp">
+                        <div class="champion-position">1st Runner-up</div>
+                        <div class="champion-info">
+                            <div class="winner-name">Kansorn Kanpinit</div>
+                            <div class="university">Mahidol University</div>
+                        </div>
+                    </div>
+
+                    <div class="champion-card scroll-animation" data-animation="animate__fadeInUp">
+                        <div class="champion-position">2nd Runner-up</div>
+                        <div class="champion-info">
+                            <div class="winner-name">Reynald Hartanto Gunawan</div>
+                            <div class="university">Universitas Kristen Petra</div>
+                        </div>
+                    </div>
+
+                    <div class="champion-card scroll-animation" data-animation="animate__fadeInUp">
+                        <div class="champion-position">4th Place</div>
+                        <div class="champion-info">
+                            <div class="winner-name">Ray Tng</div>
+                            <div class="university">Ngee Ann Polytechnic</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 

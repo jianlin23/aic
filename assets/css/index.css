@@ -42,8 +42,8 @@
 
 .support-title,
 .power-title {
-    color: var(--text-black);
-    font-size: 1.2rem;
+    color: #3F3E5D;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -63,16 +63,72 @@
 
 .supported-logos img,
 .powered-logos img {
-    max-width: 80px;
+    max-width: 120px;
     object-fit: contain;
+}
+
+/* Lightbox styles */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.lightbox.active {
+    opacity: 1;
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+.lightbox.active img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.lightbox .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.lightbox .close-btn:hover {
+    transform: scale(1.1);
+}
+
+.lightbox-trigger {
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 /* --------------------------------------------------------------- */
 /* Champion Section */
 /* --------------------------------------------------------------- */
-.champion-section .container {
+/* .champion-section .container {
     max-width: 900px;
-}
+} */
 
 .champion-section {
     padding: 50px 0;
@@ -81,19 +137,20 @@
 }
 
 .champion-section h2 {
-    font-size: 1rem;
+    font-size: 24px;
     margin-bottom: 20px;
     color: #3F3E5D;
     font-weight: bold;
 }
 
 .champion-image {
-    margin: 30px auto;
+    margin: 10px auto;
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     grid-template-rows: 50px 1fr;
     gap: 25px;
     align-items: start;
+    position: relative;
 }
 
 .champion-image img {
@@ -103,53 +160,25 @@
     object-fit: cover;
     grid-column: 1 / span 3;
     grid-row: 2;
+    position: relative;
 }
 
-.nav-arrow {
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    color: #3F3E5D;
-    border: 5px solid #3F3E5D;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    z-index: 1000;
-}
-
-.nav-arrow .material-icons {
-    font-size: 56px;
-    line-height: 1;
-}
-
-.nav-arrow:hover,
-.nav-arrow:active {
-    opacity: 1;
-    transform: scale(1.2);
-}
-
-.nav-arrow:active {
-    background-color: rgba(26, 35, 126, 1);
-}
-
-.nav-arrow.prev {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: end;
-}
-
-.nav-arrow.next {
-    grid-column: 3;
-    grid-row: 1;
-    justify-self: start;
+.champion-image::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    pointer-events: none;
 }
 
 .champion-details {
     margin-top: 30px;
     animation-duration: 1s;
+    font-size: 20px;
     color: #3F3E5D;
 }
 
@@ -189,7 +218,7 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: var(--text-black);
+    color: white;
 }
 
 .autoplay-progress svg {
@@ -201,7 +230,7 @@
     width: 100%;
     height: 100%;
     stroke-width: 4px;
-    stroke: var(--text-black);
+    stroke: white;
     fill: none;
     stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
     stroke-dasharray: 125.6;
@@ -210,15 +239,16 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-    color: var(--text-black);
+    color: white;
+    top: 40%;
 }
 
 /* --------------------------------------------------------------- */
 /* Partner Section */
 /* --------------------------------------------------------------- */
-.partner-section .container {
+/* .partner-section .container {
     max-width: 900px;
-}
+} */
 
 .partner-section {
     padding: 50px 0;
@@ -233,8 +263,8 @@
 }
 
 .country-name {
-    color: var(--gray);
-    font-size: 0.8rem;
+    color: #707070;
+    font-size: 20px;
     font-weight: 500;
     display: flex;
     justify-content: center;

@@ -1,4 +1,4 @@
-const galleryImages = [
+const galleryData = [
     {
         src: '../assets/image/gallery/regional/1.jpg',
         alt: 'AIC Regional Champion 2024'
@@ -49,16 +49,55 @@ function generateGallery() {
     const galleryGrid = document.querySelector('.gallery-grid');
     if (!galleryGrid) return;
 
-    galleryGrid.innerHTML = galleryImages.map((image, index) => `
-        <div class="gallery-item scroll-animation" data-animation="animate__fadeInUp" style="animation-delay: ${(index * 0.1).toFixed(1)}s;">
-            <img src="${image.src}" alt="${image.alt}">
-            <div class="overlay">
-                <span class="material-icons view-icon">visibility</span>
+    const images = galleryData;
+    if (!images) return;
+
+    // Create Swiper structure
+    galleryGrid.innerHTML = `
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                ${images.map(image => `
+                    <div class="swiper-slide">
+                        <img src="${image.src}" alt="${image.alt}">
+                    </div>
+                `).join('')}
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                ${images.map(image => `
+                    <div class="swiper-slide">
+                        <img src="${image.src}" alt="${image.alt}">
+                    </div>
+                `).join('')}
             </div>
         </div>
-    `).join('');
+    `;
 
-    // Add lightbox to body
+    // Initialize Swiper
+    var thumbsSwiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+
+    var mainSwiper = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: thumbsSwiper,
+        },
+    });
+
+    // Add lightbox to body if it doesn't exist
     if (!document.querySelector('.lightbox')) {
         const lightbox = document.createElement('div');
         lightbox.className = 'lightbox';
@@ -69,17 +108,16 @@ function generateGallery() {
         document.body.appendChild(lightbox);
     }
 
-    // Add click events
-    const galleryItems = document.querySelectorAll('.gallery-item');
+    // Add click events for lightbox
+    const slides = document.querySelectorAll('.mySwiper2 .swiper-slide');
     const lightbox = document.querySelector('.lightbox');
     const lightboxImg = lightbox.querySelector('img');
     const closeBtn = lightbox.querySelector('.close-btn');
 
-    galleryItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const imgSrc = item.querySelector('img').src;
+    slides.forEach(slide => {
+        slide.addEventListener('click', () => {
+            const imgSrc = slide.querySelector('img').src;
             lightbox.classList.add('active');
-            // Small delay to ensure the fade in animation works properly
             setTimeout(() => {
                 lightboxImg.src = imgSrc;
             }, 50);
@@ -99,7 +137,6 @@ function generateGallery() {
         }
     });
 
-    // Update the escape key handler
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && lightbox.classList.contains('active')) {
             lightboxImg.src = '';

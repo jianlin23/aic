@@ -4,7 +4,7 @@
 }
 
 .content {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -17,30 +17,25 @@
 .prizes-header .country-flag {
     width: 120px;
     height: 120px;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 50%;
     margin-bottom: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border: 5px solid var(--text-black);
+    border: 5px solid #3E3E5C;
 }
 
 .prizes-header h1 {
-    color: var(--text-black);
-    font-size: 2rem;
+    color: #3F3E5D;
+    font-size: 34px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .prizes-header h2 {
-    color: var(--text-black);
-    font-size: 1.5rem;
+    color: #3F3E5D;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-}
-
-.content .prizes-table {
-    width: 100%;
-    margin: 0;
 }
 
 .prizes-table {
@@ -57,30 +52,29 @@
 }
 
 .prizes-table td {
-    padding: 20px 30px;
+    padding: 10px 15px;
     vertical-align: middle;
-    color: var(--text-black);
-    border: 5px solid var(--text-black);
+    font-weight: bold;
+    color: #3F3E5D;
+    border: 5px solid #3F3E5D;
+    font-size: 24px;
 }
 
 .prizes-table td:first-child {
     background: var(--orange);
-    font-weight: 400;
     width: 30%;
     text-align: center;
 }
 
 .prizes-table td:nth-child(2) {
     background: var(--sky-blue);
-    font-weight: 400;
     width: 35%;
     text-align: center;
     border-left: none;
 }
 
 .prizes-table td:last-child {
-    background: var(--light-blue);
-    font-weight: 400;
+    background: #BED7E8;
     width: 35%;
     text-align: center;
     border-left: none;
@@ -108,7 +102,11 @@
 
 @media (max-width: 768px) {
     .prizes-section {
-        padding: 100px 20px 40px;
+        padding: 100px 0px 40px;
+    }
+
+    .content {
+        padding: 0;
     }
 
     .prizes-header h1 {
@@ -132,7 +130,7 @@
     }
 
     .prize-card {
-        background-color: white;
+        background-color: var(--orange);
         padding: 20px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
@@ -140,7 +138,7 @@
     .prize-position {
         font-weight: bold;
         font-size: 1.2rem;
-        color: var(--text-dark);
+        color: #3F3E5D;
         margin-bottom: 15px;
         padding-bottom: 10px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -161,14 +159,14 @@
     }
 
     .level {
-        color: var(--text-black);
+        color: #3F3E5D;
         font-size: 0.9rem;
         font-weight: 500;
     }
 
     .amount {
         font-weight: bold;
-        color: var(--text-black);
+        color: #3F3E5D;
         font-size: 1.2rem;
     }
 
@@ -196,8 +194,8 @@
 }
 
 .champions-header h2 {
-    color: var(--text-black);
-    font-size: 1.5rem;
+    color: #3F3E5D;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -216,13 +214,14 @@
     padding: 25px 30px;
     vertical-align: middle;
     text-align: center;
-    border: 5px solid var(--text-black);
+    border: 5px solid #3F3E5D;
+    color: #3F3E5D;
+    font-size: 24px;
 }
 
 .champions-table td:first-child {
     background: var(--orange);
-    color: var(--text-black);
-    font-weight: 600;
+    font-weight: bold;
     width: 40%;
     text-transform: capitalize;
 }
@@ -231,25 +230,58 @@
     text-align: center;
     border-left: none;
     align-items: center;
+    font-size: 20px;
 }
 
 .champions-table .winner-name {
-    font-weight: 700;
-    color: var(--text-black);
-    font-size: 1.1rem;
     margin-bottom: 5px;
 }
 
 .champions-table .university {
-    color: var(--text-black);
-    font-weight: 500;
-    font-size: 0.9rem;
     text-transform: uppercase;
+}
+
+/* Champions Cards Styling */
+.champions-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.champion-card {
+    background: var(--orange);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.champion-position {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3F3E5D;
+    margin-bottom: 15px;
+}
+
+.champion-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.winner-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #3F3E5D;
+}
+
+.university {
+    font-size: 0.9rem;
+    color: #3F3E5D;
 }
 
 @media (max-width: 768px) {
     .champions-section {
-        padding: 40px 20px;
+        padding: 50px 20px 0px;
     }
 
     .champions-header h2 {
@@ -270,7 +302,6 @@
 /* //////////////////////////////////////////////// */
 .gallery-section {
     padding: 20px 0 60px;
-    background: linear-gradient(135deg, var(--bg-light) 0%, var(--white) 100%);
 }
 
 .gallery-header {
@@ -279,8 +310,8 @@
 }
 
 .gallery-header h2 {
-    color: var(--text-black);
-    font-size: 1.5rem;
+    color: #3F3E5D;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -390,6 +421,23 @@
     .gallery-grid .mySwiper {
         height: 80px;
     }
+
+    .gallery-section {
+        padding: 40px 20px 20px;
+    }
+
+    .gallery-header h2 {
+        font-size: 1rem;
+    }
+
+    .partner-section h2 {
+        font-size: 1rem !important;
+    }
+
+    .partner-logo{
+        width: 80% !important;
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -402,10 +450,6 @@
     .gallery-grid {
         grid-template-columns: 1fr;
         gap: 20px;
-    }
-
-    .gallery-header h2 {
-        font-size: 1rem;
     }
 }
 
@@ -423,100 +467,22 @@
 }
 
 .partner-section h2 {
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-bottom: 20px;
+    color: #3F3E5D;
     font-weight: bold;
     animation: fadeInUp 1s ease;
 }
 
-.country-name {
-    color: var(--text-black);
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-top: 10px;
-}
-
-.partner-section .row {
-    margin-bottom: 30px;
+.partner-logo {
     width: 100%;
-    padding: 0 15px;
-}
-
-.partners-grid .row {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.partners-grid .partner-logo {
-    width: 120px;
     height: auto;
-    transition: transform 0.3s ease;
-    object-fit: contain;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-@media (max-width: 768px) {
-
-    .partners-grid .partner-logo {
-        width: 100px;
-    }
-
-    .partners-grid .row {
-        gap: 10px;
-    }
-}
-
-.partners-grid .partner-logo:hover {
-    transform: scale(1.05);
-}
-
-.partners-grid .row {
-    justify-content: center;
-}
-
-.partners-grid .country-name {
-    display: none;
-}
-
-.partner-row-1 {
-    animation-delay: 0.2s;
-}
-
-.partner-row-2 {
-    animation-delay: 0.4s;
-}
-
-.partner-row-3 {
-    animation-delay: 0.6s;
-}
-
-.partner-row-4 {
-    animation-delay: 0.8s;
-}
-
-/* Logo animation delays within each row */
-.partner-logo-1 {
-    animation-delay: 0.3s;
-}
-
-.partner-logo-2 {
-    animation-delay: 0.4s;
-}
-
-.partner-logo-3 {
-    animation-delay: 0.5s;
-}
-
-.partner-logo-4 {
-    animation-delay: 0.6s;
-}
-
-.partner-logo-5 {
-    animation-delay: 0.7s;
-}
-
-.partner-logo-6 {
-    animation-delay: 0.8s;
+.partner-logo:hover {
+    transform: scale(1.2);
 }
 
 .scroll-animation {
@@ -525,54 +491,6 @@
 
 .scroll-animation.animate__animated {
     opacity: 1;
-}
-
-/* Add responsive styles */
-@media (max-width: 991px) {
-    .country-name {
-        font-size: 1.1rem;
-    }
-
-    .partner-section .row {
-        margin-bottom: 20px;
-    }
-
-    .partner-section h2 {
-        font-size: 1rem;
-    }
-
-    .partner-logo {
-        padding: 8px;
-    }
-}
-
-@media (max-width: 768px) {
-    .country-name {
-        font-size: 1rem;
-    }
-
-    .partner-logo {
-        padding: 5px;
-    }
-
-    .partner-logo:hover {
-        transform: scale(1.1);
-    }
-}
-
-@media (max-width: 576px) {
-    .country-name {
-        font-size: 0.9rem;
-        margin-top: 5px;
-    }
-
-    .partner-section .row {
-        margin-bottom: 15px;
-    }
-
-    .partner-logo {
-        padding: 3px;
-    }
 }
 
 /* --------------------------------------------------------------- */
@@ -585,8 +503,8 @@
 }
 
 .uni-partner-section h2 {
-    color: var(--text-black);
-    font-size: 1.5rem;
+    color: #3F3E5D;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -598,9 +516,8 @@
 }
 
 .uni-partners-grid .uni-name {
-    color: var(--text-black);
-    font-size: 0.5rem;
-    font-weight: 300;
+    color: #3F3E5D;
+    font-size: 14px;
     line-height: 1.4;
     font-weight: bold;
 }
