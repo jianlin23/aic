@@ -36,10 +36,6 @@
         left: 0;
     }
 
-    .timeline-date h3 {
-        font-size: 1rem;
-    }
-
     .criteria-btn,
     .guide-btn {
         padding: 12px 25px;
@@ -73,6 +69,9 @@
         font-size: 0.6rem;
     }
 
+    .about-header {
+        margin-bottom: 0;
+    }
 
     .guide-btn,
     .criteria-btn {
@@ -84,6 +83,33 @@
     .criteria-table tr:nth-child(2) td:nth-child(2),
     .criteria-table tr:nth-child(2) td:nth-child(3) {
         border-bottom: 3px solid #3D3D5C;
+    }
+
+    p, li{
+        font-size: 0.6em !important;
+    }
+
+    h3, h2{
+        font-size: 0.8em !important;
+    }
+    
+    .prize-section h3{
+        font-size: 0.8em !important;
+    }
+
+    .path-section,
+    .user-guide-section{
+        padding: 0;
+        font-size: 1.2em !important;
+    }
+
+    .user-guide-section p{
+        font-weight: normal;
+    }
+
+    .timeline-header{
+        font-size: 1.5em !important;
+        padding: 0;
     }
 
 }
@@ -104,9 +130,8 @@
         font-size: 24px;
     }
 
-    .about-desc,
-    .path-description p {
-        font-size: 16px;
+    .about-description {
+        margin-bottom: 0;
     }
 
     .timeline-item {

@@ -4,8 +4,9 @@
     /* Poster Section */
     /* --------------------------------------------------------------- */
     .poster-section {
-        margin-top: 40px;
+        margin-top: 60px;
         height: 100%;
+        padding: 0;
     }
 
     .partners-header {
@@ -32,7 +33,7 @@
     .power-title {
         display: block;
         margin-bottom: 15px;
-        /* Space between title and its logos */
+        font-size: 1em;
     }
 
     .partners-container {
@@ -55,16 +56,26 @@
     /* Champion Section */
     /* --------------------------------------------------------------- */
     .champion-section .container {
-        max-width: 400px;
+        padding: 0;
     }
 
     .champion-section {
-        padding: 20px 0;
+        padding: 0;
+    }
+
+    #championContainer {
+        margin: 0;
+        padding: 0;
+    }
+
+    .champion-image {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
     .champion-section h2 {
-        font-size: 0.7rem;
-        margin: 0;
+        margin-bottom: 20PX;
     }
 
     .champion-image {
@@ -148,4 +159,9 @@
         align-items: center;
         margin: 0 auto;
     }
+
+    .container h2 {
+        font-size: 1rem;
+    }
+
 }
