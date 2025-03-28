@@ -1,7 +1,6 @@
-/* Prize Section */
+/* Prizes Section */
 .prizes-section {
-    margin-top: 100px;
-    padding: 40px 0 20px;
+    padding: 120px 0 80px;
 }
 
 /* .prizes-section .container {
@@ -10,20 +9,31 @@
 
 .prizes-header {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
+}
+
+.prizes-header .country-flag {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 5px solid #3E3E5C;
 }
 
 .prizes-header h1 {
     color: #3F3E5D;
     font-size: 34px;
-    font-family: var(--font-primary);
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .prizes-header h2 {
     color: #3F3E5D;
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .prizes-table {
@@ -90,7 +100,6 @@
 
 .prize-card {
     background: var(--orange);
-    border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -128,6 +137,15 @@
 
 @media (max-width: 768px) {
 
+    /* Prizes Section */
+    .prizes-section {
+        padding: 80px 0 0;
+    }
+
+    .prizes-section .container {
+        padding: 0 20px;
+    }
+
     .prizes-header h1 {
         font-size: 1.5rem;
     }
@@ -147,6 +165,7 @@
 .champions-section {
     padding: 40px 0;
 }
+
 /* 
 .champions-section .container {
     max-width: 900px;
@@ -214,7 +233,6 @@
 
 .champion-card {
     background: var(--orange);
-    border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -246,6 +264,10 @@
 @media (max-width: 768px) {
     .champions-section {
         padding: 40px 0px;
+    }
+
+    .champions-section .container {
+        padding: 0 20px;
     }
 
     .champions-header h2 {
@@ -374,6 +396,7 @@
     height: 100%;
     aspect-ratio: 4/3;
     object-fit: cover;
+    object-position: top center;
 }
 
 .gallery-grid .swiper-button-next,
@@ -384,6 +407,10 @@
 @media (max-width: 768px) {
     .gallery-section {
         padding: 0;
+    }
+
+    .gallery-section .container {
+        padding: 0 20px;
     }
 
     .gallery-grid .mySwiper2 {

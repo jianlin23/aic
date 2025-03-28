@@ -38,11 +38,14 @@
         <header>
             <nav class="navbar navbar-expand-lg fixed-top animate__animated animate__fadeInDown">
                 <div class="container">
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <div class="d-flex d-lg-none w-100 align-items-center">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="nav-link register-btn animate__animated animate__fadeIn ms-auto"
+                            href="https://sso.cgsi.com/aic/">REGISTER</a>
+                    </div>
 
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <!-- Left side navigation -->
@@ -62,8 +65,8 @@
 
                                 <div class="dropdown-menu animate__animated animate__fadeIn">
                                     <a class="dropdown-item" href="country/regional.html">
-                                        <img src="assets/image/home/flags/malaysia.png" alt="Malaysia" class="flag-icon"
-                                            style="visibility: hidden" />
+                                        <img src="assets/image/home/flags/regional.png" alt="Regional"
+                                            class="flag-icon" />
                                         REGIONAL
                                     </a>
                                     <a class="dropdown-item" href="country/malaysia.html">
@@ -89,16 +92,15 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link animate__animated animate__fadeIn" href="contact_us.html">CONTACT
-                                    US</a>
+                                <a class="nav-link animate__animated animate__fadeIn" href="contact_us.html">CONTACT US</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link animate__animated animate__fadeIn" href="tc.html">T&C</a>
                             </li>
                         </ul>
 
-                        <!-- Right side register button -->
-                        <ul class="navbar-nav">
+                        <!-- Register button for desktop only -->
+                        <ul class="navbar-nav d-none d-lg-flex">
                             <li class="nav-item">
                                 <a class="nav-link register-btn animate__animated animate__fadeIn"
                                     href="https://sso.cgsi.com/aic/">REGISTER</a>
@@ -257,11 +259,11 @@
                                         <li class="scroll-animation" data-animation="animate__fadeInRight"
                                             style="animation-delay: 0.1s;">
                                             <i class="material-icons percentage-icon">cancel</i>
-                                            <span class="percentage">45%&nbsp;</span>- Presentation Quality
+                                            <span class="percentage">35%&nbsp;</span>- Presentation Quality
                                         </li>
                                         <li class="scroll-animation" data-animation="animate__fadeInRight">
                                             <i class="material-icons percentage-icon">cancel</i>
-                                            <span class="percentage">20%&nbsp;</span>- ESG Metrics
+                                            <span class="percentage">30%&nbsp;</span>- ESG Metrics
                                         </li>
                                         <li class="scroll-animation" data-animation="animate__fadeInRight">
                                             <i class="material-icons percentage-icon">cancel</i>
@@ -359,11 +361,11 @@
                                         <ul class="criteria-list">
                                             <li class="scroll-animation" data-animation="animate__fadeInRight">
                                                 <i class="material-icons percentage-icon">cancel</i>
-                                                <span class="percentage">45%&nbsp;</span>- Presentation Quality
+                                                <span class="percentage">35%&nbsp;</span>- Presentation Quality
                                             </li>
                                             <li class="scroll-animation" data-animation="animate__fadeInRight">
                                                 <i class="material-icons percentage-icon">cancel</i>
-                                                <span class="percentage">20%&nbsp;</span>- ESG Metrics
+                                                <span class="percentage">30%&nbsp;</span>- ESG Metrics
                                             </li>
                                             <li class="scroll-animation" data-animation="animate__fadeInRight">
                                                 <i class="material-icons percentage-icon">cancel</i>
@@ -382,7 +384,7 @@
                 </div>
 
                 <div class="criteria-button-container text-center">
-                    <a href="assets/doc/AIC_Grading_Criteria_2024.pdf" target="_blank"
+                    <a href="assets/doc/AIC Grading Criteria_2025.pdf" target="_blank"
                         class="criteria-btn scroll-animation" data-animation="animate__fadeInUp">
                         JUDGING CRITERIA
                     </a>

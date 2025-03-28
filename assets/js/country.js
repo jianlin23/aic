@@ -320,6 +320,10 @@ const galleryData = {
             src: '../assets/image/gallery/malaysia/4.jpg',
             alt: 'AIC Malaysia Champion 2024'
         },
+        {
+            src: '../assets/image/gallery/malaysia/5.jpg',
+            alt: 'AIC Malaysia Champion 2024'
+        },
     ],
     indonesia: [
         {
@@ -936,6 +940,7 @@ const universityPartners = {
 };
 
 function generateChampionsTable(year, country) {
+    // Desktop Table
     const tableClass = `champions${year}`;
     const table = document.getElementById(tableClass);
     if (!table) return;
@@ -944,7 +949,8 @@ function generateChampionsTable(year, country) {
     const countryChampions = championsData[country] && championsData[country][year];
     if (!countryChampions) return;
 
-    const rows = countryChampions.map((champion, index) => `
+    // Generate desktop table view
+    const tableRows = countryChampions.map((champion, index) => `
         <tr>
             <td>${champion.position}</td>
             <td>
@@ -954,8 +960,27 @@ function generateChampionsTable(year, country) {
         </tr>
     `).join('');
 
-    table.innerHTML = rows;
+    table.innerHTML = tableRows;
+
+    // Mobile Cards
+    const mobileCardsId = `champions${year}Mobile`;
+    const mobileContainer = document.getElementById(mobileCardsId);
+    if (!mobileContainer) return;
+
+    // Generate mobile cards view
+    const cardsHtml = countryChampions.map((champion, index) => `
+        <div class="champion-card scroll-animation" data-animation="animate__fadeInUp" style="animation-delay: ${(index * 0.1).toFixed(1)}s;">
+            <div class="champion-position">${champion.position}</div>
+            <div class="champion-info">
+                <div class="winner-name">${champion.name}</div>
+                <div class="university">${champion.university}</div>
+            </div>
+        </div>
+    `).join('');
+
+    mobileContainer.innerHTML = cardsHtml;
 }
+
 // Then update the renderPartners function
 function renderPartners(country) {
     const container = document.querySelector('.partners-grid .row');

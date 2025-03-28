@@ -1,21 +1,5 @@
 @media screen and (max-width: 991px) {
-
-    .about-section .container {
-        width: 700px;
-    }
-
-    .path-section .container {
-        width: 700px;
-    }
-
-    .timeline-section .container {
-        width: 700px;
-    }
-
-    .user-guide-section .container {
-        width: 700px;
-    }
-
+    
     .criteria-table th,
     .criteria-table td {
         padding: 20px;

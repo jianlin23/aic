@@ -1,23 +1,83 @@
 @media screen and (max-width: 768px) {
-    .about-section .container {
-        width: 400px;
-        padding: 60px 0;
-    }
 
-    .path-section .container {
-        width: 400px;
-    }
-
-    .timeline-section .container {
-        width: 400px;
-    }
-
+    .about-section .container,
+    .path-section .container,
+    .timeline-section .container,
     .user-guide-section .container {
-        width: 400px;
+        width: 100%;
+        padding: 0 15px;
     }
 
-    .timeline::after {
-        left: 31px;
+    p,
+    li {
+        font-size: 16px !important;
+    }
+
+    h3{
+        font-size: 16px !important;
+    }
+
+    .prize-section h3,
+    .path-header h3,
+    .timeline-header h2,
+    .guide-header h2 {
+        font-size: 20px !important;
+    }
+
+    .about-header h1 {
+        font-size: 1.5em !important;
+        margin-bottom: 0;
+    }
+
+    .path-section {
+        padding: 0;
+    }
+
+    .mobile-table-container {
+        margin-bottom: 2rem;
+    }
+
+    .mobile-table-title {
+        background-color: #3D3D5C;
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .criteria-table {
+        width: 100%;
+    }
+
+    .mobile-criteria-table .criteria-list li {
+        margin-bottom: 8px;
+    }
+
+    .challenge-content {
+        font-size: 16px !important;
+    }
+
+    .criteria-list li {
+        font-size: 12px !important;
+    }
+
+    .criteria-table tr:nth-child(2) td:nth-child(1),
+    .criteria-table tr:nth-child(2) td:nth-child(2),
+    .criteria-table tr:nth-child(2) td:nth-child(3) {
+        border-bottom: 3px solid #3D3D5C;
+    }
+
+    .criteria-table td {
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+    }
+
+    .timeline-header {
+        margin: 2.5rem 0;
+    }
+
+    .timeline-section {
+        padding: 20px 0;
     }
 
     .timeline-item {
@@ -28,110 +88,11 @@
 
     .timeline-item::after {
         left: 18px !important;
-        /* Force all dots to align left */
         right: auto;
     }
 
     .timeline-item:nth-child(even) {
         left: 0;
-    }
-
-    .criteria-btn,
-    .guide-btn {
-        padding: 12px 25px;
-        font-size: 1rem;
-    }
-
-    .mobile-table-container {
-        margin-bottom: 2rem;
-    }
-
-    .mobile-table-title {
-        background-color: var(--dark-blue);
-        color: white;
-        padding: 10px 15px;
-        font-size: 1rem;
-        text-align: center;
-        margin-bottom: 0;
-        border-radius: 5px 5px 0 0;
-    }
-
-    .mobile-criteria-table {
-        width: 100%;
-        border-radius: 0 0 5px 5px;
-    }
-
-    .mobile-criteria-table .criteria-list li {
-        margin-bottom: 8px;
-    }
-
-    .criteria-list li {
-        font-size: 0.6rem;
-    }
-
-    .about-header {
-        margin-bottom: 0;
-    }
-
-    .guide-btn,
-    .criteria-btn {
-        width: 60%;
-        height: auto;
-    }
-
-    .criteria-table tr:nth-child(2) td:nth-child(1),
-    .criteria-table tr:nth-child(2) td:nth-child(2),
-    .criteria-table tr:nth-child(2) td:nth-child(3) {
-        border-bottom: 3px solid #3D3D5C;
-    }
-
-    p, li{
-        font-size: 0.6em !important;
-    }
-
-    h3, h2{
-        font-size: 0.8em !important;
-    }
-    
-    .prize-section h3{
-        font-size: 0.8em !important;
-    }
-
-    .path-section,
-    .user-guide-section{
-        padding: 0;
-        font-size: 1.2em !important;
-    }
-
-    .user-guide-section p{
-        font-weight: normal;
-    }
-
-    .timeline-header{
-        font-size: 1.5em !important;
-        padding: 0;
-    }
-
-}
-
-/* ... existing code remains unchanged ... */
-
-@media screen and (max-width: 480px) {
-
-    .about-section .container,
-    .path-section .container,
-    .timeline-section .container,
-    .user-guide-section .container {
-        width: 100%;
-        padding: 0 15px;
-    }
-
-    .about-header h1 {
-        font-size: 24px;
-    }
-
-    .about-description {
-        margin-bottom: 0;
     }
 
     .timeline-item {
@@ -144,50 +105,33 @@
     }
 
     .timeline-item::after {
-        left: 8px !important;
+        left: 10px !important;
         width: 20px;
         height: 20px;
-    }
-
-    .timeline-date h3 {
-        font-size: 0.875rem;
-        padding: 6px 12px;
     }
 
     .timeline-content {
         padding: 20px;
     }
 
-    .timeline-content h4 {
-        font-size: 0.875rem;
+    .timeline-content small{
+        font-size: 12px !important;
     }
 
-    .timeline-content p {
-        font-size: 0.8rem;
+    .user-guide-section {
+        padding: 10px 0;
+    }
+    
+    .guide-subtitle,
+    .guide-message{
+        font-size: 16px !important;
     }
 
     .criteria-btn,
     .guide-btn {
-        width: 100%;
-        padding: 10px 20px;
-        font-size: 0.875rem;
-    }
-
-    .mobile-table-title {
-        font-size: 0.875rem;
-        padding: 8px 12px;
-    }
-
-    .challenge-content span,
-    .level-content p {
-        font-size: 0.8rem;
-    }
-
-    .criteria-list li {
-        font-size: 0.7rem;
-    }
-
-    .percentage-icon {
-        font-size: 14px;
+        padding: 12px 25px;
+        font-size: 1rem;
+        height: auto;
+        width: 90%;
     }
 }

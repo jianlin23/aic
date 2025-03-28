@@ -6,7 +6,7 @@
 /* --------------------------------------------------------------- */
 body {
     background-color: var(--primary);
-    color: white;
+    color: #3F3E5D !important;
     font-family: 'Nunito Sans', sans-serif;
     /* user-select: none; */
 }
@@ -137,7 +137,7 @@ h1 {
 }
 
 .footer p {
-    color: #707070;
+    color: #3F3E5D;
     margin: 0;
     font-size: 20px;
     font-weight: bold;

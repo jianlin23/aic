@@ -33,7 +33,7 @@
     .power-title {
         display: block;
         margin-bottom: 15px;
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .partners-container {
@@ -120,10 +120,7 @@
     /* --------------------------------------------------------------- */
     .partner-section {
         padding: 10px;
-    }
-
-    .partner-section .container {
-        max-width: 400px;
+        margin-top: 50px;
     }
 
     .partner-section h2 {
