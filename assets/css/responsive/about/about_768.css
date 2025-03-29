@@ -59,6 +59,16 @@
 
     .criteria-list li {
         font-size: 12px !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Add this to ensure percentage stays visible */
+    .criteria-list li::before {
+        flex-shrink: 0;
     }
 
     .criteria-table tr:nth-child(2) td:nth-child(1),

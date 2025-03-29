@@ -74,9 +74,10 @@ h1 {
     background-color: var(--dark-blue);
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0.5rem;
+    display: none; /* Hide by default */
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown-menu.show {
     display: block;
     animation: fadeIn 0.3s ease;
 }

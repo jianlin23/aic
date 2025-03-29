@@ -20,3 +20,14 @@ function initScrollAnimations() {
 }
 
 document.addEventListener('DOMContentLoaded', initScrollAnimations);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const dropdownToggle = document.querySelector('.nav-item.dropdown .nav-link');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const dropdownIcon = document.querySelector('.dropdown-icon');
+
+    dropdownToggle.addEventListener('click', function (e) {
+        dropdownIcon.textContent = dropdownMenu.classList.contains('show') ? 'expand_less' : 'expand_more';
+
+    });
+});

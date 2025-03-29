@@ -141,11 +141,6 @@ function renderChampion() {
     });
 }
 
-// function navigateChampion(direction) {
-//     currentChampion = (currentChampion + direction + champions.length) % champions.length;
-//     renderChampion(currentChampion);
-// }
-
 // Initial render
 document.addEventListener('DOMContentLoaded', renderChampion);
 
